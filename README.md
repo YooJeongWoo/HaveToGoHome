@@ -23,7 +23,10 @@ README HaveToGoHome ios.
 * Code review
 * Other guidelines
 
-### Who do I talk to? ###
+### API KEYS ###
+* Google map -> AppDelegate.swift 안에
+* Naver Local Search -> Model/Client/LocalSearchConstant
 
-* Repo owner or admin
-* Other community or team contact
+### Written By ###
+
+* Yoo JeongWoo
