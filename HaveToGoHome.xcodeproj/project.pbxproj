@@ -22,6 +22,8 @@
 		4CB1BF8B1EFD469D0031A180 /* LocalSearchClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB1BF8A1EFD469D0031A180 /* LocalSearchClient.swift */; };
 		4CB1BF8D1EFD46B00031A180 /* HaveToGoHomeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB1BF8C1EFD46B00031A180 /* HaveToGoHomeClient.swift */; };
 		4CB1BF901EFD48AD0031A180 /* LocalSearchConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB1BF8F1EFD48AD0031A180 /* LocalSearchConstant.swift */; };
+		4CB1BF941EFE01300031A180 /* LocalSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB1BF931EFE01300031A180 /* LocalSearchService.swift */; };
+		4CB1BF961EFE01820031A180 /* LocalSearchParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB1BF951EFE01820031A180 /* LocalSearchParser.swift */; };
 		4CD0D0141EF7F4A200B0DD84 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD0D0131EF7F4A200B0DD84 /* Images.xcassets */; };
 		4CD0D0161EF7F8F000B0DD84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0D0151EF7F8F000B0DD84 /* ViewController.swift */; };
 		D6C6868F01CA06F41DFD0175 /* Pods_HaveToGoHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80009067781ED649F6CCE657 /* Pods_HaveToGoHome.framework */; };
@@ -60,6 +62,8 @@
 		4CB1BF8A1EFD469D0031A180 /* LocalSearchClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalSearchClient.swift; sourceTree = "<group>"; };
 		4CB1BF8C1EFD46B00031A180 /* HaveToGoHomeClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HaveToGoHomeClient.swift; sourceTree = "<group>"; };
 		4CB1BF8F1EFD48AD0031A180 /* LocalSearchConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalSearchConstant.swift; sourceTree = "<group>"; };
+		4CB1BF931EFE01300031A180 /* LocalSearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalSearchService.swift; sourceTree = "<group>"; };
+		4CB1BF951EFE01820031A180 /* LocalSearchParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalSearchParser.swift; sourceTree = "<group>"; };
 		4CD0D0131EF7F4A200B0DD84 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4CD0D0151EF7F8F000B0DD84 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		80009067781ED649F6CCE657 /* Pods_HaveToGoHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HaveToGoHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +166,8 @@
 		4CB1BF8E1EFD46B90031A180 /* Client */ = {
 			isa = PBXGroup;
 			children = (
+				4CB1BF931EFE01300031A180 /* LocalSearchService.swift */,
+				4CB1BF951EFE01820031A180 /* LocalSearchParser.swift */,
 				4CB1BF8A1EFD469D0031A180 /* LocalSearchClient.swift */,
 				4CB1BF8F1EFD48AD0031A180 /* LocalSearchConstant.swift */,
 				4CB1BF8C1EFD46B00031A180 /* HaveToGoHomeClient.swift */,
@@ -265,7 +271,6 @@
 				TargetAttributes = {
 					4C7D1DFB1EF7EFCF0019189F = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 2U8WP57VU8;
 						ProvisioningStyle = Automatic;
 					};
 					4C7D1E121EF7EFCF0019189F = {
@@ -422,8 +427,10 @@
 				4CD0D0161EF7F8F000B0DD84 /* ViewController.swift in Sources */,
 				4CB1BF901EFD48AD0031A180 /* LocalSearchConstant.swift in Sources */,
 				4C7D1E081EF7EFCF0019189F /* HaveToGoHome.xcdatamodeld in Sources */,
+				4CB1BF941EFE01300031A180 /* LocalSearchService.swift in Sources */,
 				4C43A0521EFA1339009AA4D4 /* GMapViewController.swift in Sources */,
 				4CA592641EF9196600D61989 /* InsetLabel.swift in Sources */,
+				4CB1BF961EFE01820031A180 /* LocalSearchParser.swift in Sources */,
 				4C212EB21EF80D2500DF6CC8 /* PathClientModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -562,7 +569,7 @@
 			baseConfigurationReference = D500FF4DF93D7E194B7C7149 /* Pods-HaveToGoHome.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2U8WP57VU8;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HaveToGoHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.prohuhackers.HaveToGoHome;
@@ -576,7 +583,7 @@
 			baseConfigurationReference = BA11237E85040DE0D4886E12 /* Pods-HaveToGoHome.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2U8WP57VU8;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HaveToGoHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.prohuhackers.HaveToGoHome;
