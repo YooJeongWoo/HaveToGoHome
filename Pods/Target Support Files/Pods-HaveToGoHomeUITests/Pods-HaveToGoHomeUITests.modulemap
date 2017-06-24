@@ -1,6 +1,0 @@
-framework module Pods_HaveToGoHomeUITests {
-  umbrella header "Pods-HaveToGoHomeUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
