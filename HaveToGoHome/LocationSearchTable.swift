@@ -7,3 +7,20 @@
 //
 
 import Foundation
+import UIKit
+
+class LocationSearchTable: NSObject, UITableViewDelegate, UITableViewDataSource {
+    
+    override init() {
+        super.init()
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return tableView.dequeueReusableCell(withIdentifier: "searchCell")!
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+}

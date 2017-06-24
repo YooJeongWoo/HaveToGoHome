@@ -25,7 +25,7 @@ class SetupModel: NSObject {
     }
     
     //MARK:- Create HomeSetting Entity with label and location data
-    func createUserHomeEntity (_ label:String?, locationData:NSData?, limitTimeData: String?, alarmOption: Bool?) {
+    func createUserHomeEntity (_ label:String?, locationDetail:String?, locationData:NSData?, limitTimeData: String?, alarmOption: Bool?) {
         
         if isUserHomeSet() {
             return
@@ -36,6 +36,7 @@ class SetupModel: NSObject {
         
         //Setting attributes
         settingItem.homeLocationLabel = label
+        settingItem.homeLocationDetail = locationDetail
         settingItem.homeLocationData = locationData
         settingItem.limitTime = limitTimeData
         if alarmOption != nil {
@@ -81,7 +82,7 @@ class SetupModel: NSObject {
     }
     
     // Set home location data
-    func setUserHomeLocation(locationLabel:String?, locationData:NSData?) {
+    func setUserHomeLocation(locationLabel:String?, locationDetail:String?, locationData:NSData?) {
         if let item = getUserHomeEntity() {
             item.homeLocationLabel = locationLabel
             item.homeLocationData = locationData
@@ -90,7 +91,7 @@ class SetupModel: NSObject {
             
             saveWithContext(context: managedObjectContext)
         } else {
-            createUserHomeEntity(locationLabel, locationData: locationData, limitTimeData: nil, alarmOption: nil)
+            createUserHomeEntity(locationLabel, locationDetail: locationDetail, locationData: locationData, limitTimeData: nil, alarmOption: nil)
         }
     }
     
@@ -101,7 +102,7 @@ class SetupModel: NSObject {
             
             saveWithContext(context: managedObjectContext)
         } else {
-            createUserHomeEntity(nil, locationData: nil, limitTimeData: limitTimeData, alarmOption: nil)
+            createUserHomeEntity(nil, locationDetail: nil, locationData: nil, limitTimeData: limitTimeData, alarmOption: nil)
         }
         
     }
@@ -112,7 +113,7 @@ class SetupModel: NSObject {
             
             saveWithContext(context: managedObjectContext)
         } else {
-            createUserHomeEntity(nil, locationData: nil, limitTimeData: nil, alarmOption: option)
+            createUserHomeEntity(nil, locationDetail: nil, locationData: nil, limitTimeData: nil, alarmOption: option)
         }
     }
     

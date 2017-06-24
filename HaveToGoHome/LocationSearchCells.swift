@@ -30,20 +30,6 @@ class LocationSearchCell: UITableViewCell {
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        setupViews()
-    }
-    
-    let nameLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Sample Text"
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
-    
-    func setupViews() {
-        addSubview(nameLabel)
-        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-[v0]|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0":nameLabel]))
-        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[v0]|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0":nameLabel]))
     }
 }
 

@@ -79,7 +79,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Ke-Vj-eZl">
-                                                    <rect key="frame" x="351" y="53.666666666666671" width="30" height="30.000000000000014"/>
+                                                    <rect key="frame" x="351" y="54" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="5Ke-Vj-eZl" secondAttribute="height" multiplier="1:1" id="yz6-fg-G8s"/>
                                                     </constraints>
@@ -260,10 +260,10 @@
                             <constraint firstItem="Hed-V5-FXl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ydE-kv-ftv"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="setupNavBar" destination="dLH-g5-uhG" id="XWO-DL-npS"/>
                         <outlet property="setupTableView" destination="Hed-V5-FXl" id="NLt-SZ-ykF"/>
-                        <segue destination="ygD-Uh-7Oz" kind="presentation" identifier="mapSettingSegue" id="a0Y-b0-NMC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -306,17 +306,55 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <searchBar contentMode="redraw" placeholder="집 위치를 검색하세요" translatesAutoresizingMaskIntoConstraints="NO" id="lk6-4f-kRq">
-                                <rect key="frame" x="0.0" y="73" width="414" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="egP-aB-NWN"/>
-                                </constraints>
-                                <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QOc-Li-iad">
-                                <rect key="frame" x="0.0" y="117" width="414" height="619"/>
+                                <rect key="frame" x="0.0" y="73" width="414" height="663"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" tag="100" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nUU-iO-oha">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="619"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="searchCell" textLabel="ace-tx-qSq" detailTextLabel="rdt-hE-jyQ" style="IBUITableViewCellStyleSubtitle" id="shI-2V-BHU" userLabel="ResultCell">
+                                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="shI-2V-BHU" id="bmf-hW-P7e">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ace-tx-qSq">
+                                                            <rect key="frame" x="15" y="4" width="34" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rdt-hE-jyQ">
+                                                            <rect key="frame" x="15" y="25" width="44" height="15"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="informationCell" id="vcU-bF-R4C">
+                                                <rect key="frame" x="0.0" y="72" width="414" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vcU-bF-R4C" id="IzF-YB-c1f">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="nUU-iO-oha" secondAttribute="bottom" id="LLg-aC-ASi"/>
+                                    <constraint firstItem="nUU-iO-oha" firstAttribute="leading" secondItem="QOc-Li-iad" secondAttribute="leading" id="p8b-EN-BSg"/>
+                                    <constraint firstItem="nUU-iO-oha" firstAttribute="top" secondItem="QOc-Li-iad" secondAttribute="top" constant="44" id="riY-BD-1aY"/>
+                                    <constraint firstAttribute="trailing" secondItem="nUU-iO-oha" secondAttribute="trailing" id="wiH-iB-FVc"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -324,36 +362,27 @@
                             <constraint firstItem="QOc-Li-iad" firstAttribute="leading" secondItem="DSp-wl-LpZ" secondAttribute="leading" id="4dn-vw-ErG"/>
                             <constraint firstAttribute="trailing" secondItem="58J-Ag-0hd" secondAttribute="trailing" id="Abo-0a-WLG"/>
                             <constraint firstItem="fV8-zK-HE3" firstAttribute="top" secondItem="QOc-Li-iad" secondAttribute="bottom" id="Go6-iv-Ljm"/>
-                            <constraint firstItem="QOc-Li-iad" firstAttribute="top" secondItem="lk6-4f-kRq" secondAttribute="bottom" id="Mwq-Vb-gW8"/>
                             <constraint firstItem="58J-Ag-0hd" firstAttribute="top" secondItem="7VO-xd-a01" secondAttribute="bottom" constant="8" id="QW3-0u-fYO"/>
-                            <constraint firstAttribute="trailing" secondItem="lk6-4f-kRq" secondAttribute="trailing" id="WUT-eA-5NK"/>
+                            <constraint firstItem="QOc-Li-iad" firstAttribute="top" secondItem="58J-Ag-0hd" secondAttribute="bottom" id="XRU-KQ-yeJ"/>
                             <constraint firstAttribute="trailing" secondItem="Rcb-61-imZ" secondAttribute="trailing" id="cZu-IH-OyA"/>
-                            <constraint firstItem="lk6-4f-kRq" firstAttribute="leading" secondItem="DSp-wl-LpZ" secondAttribute="leading" id="nsR-se-d3R"/>
                             <constraint firstItem="Rcb-61-imZ" firstAttribute="top" secondItem="DSp-wl-LpZ" secondAttribute="top" id="oI2-dg-b1W"/>
                             <constraint firstItem="Rcb-61-imZ" firstAttribute="leading" secondItem="DSp-wl-LpZ" secondAttribute="leading" id="ok1-vL-Kqj"/>
-                            <constraint firstItem="lk6-4f-kRq" firstAttribute="top" secondItem="58J-Ag-0hd" secondAttribute="bottom" id="rNK-nh-PKy"/>
                             <constraint firstItem="58J-Ag-0hd" firstAttribute="leading" secondItem="DSp-wl-LpZ" secondAttribute="leading" id="tTT-Sr-CQt"/>
                             <constraint firstAttribute="trailing" secondItem="QOc-Li-iad" secondAttribute="trailing" id="xqH-fM-pXH"/>
                             <constraint firstItem="fV8-zK-HE3" firstAttribute="top" secondItem="Rcb-61-imZ" secondAttribute="bottom" id="zmq-zL-eek"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="RpF-d9-W4U"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="gMapView" destination="QOc-Li-iad" id="pc7-5L-qLB"/>
                         <outlet property="mapNavBar" destination="58J-Ag-0hd" id="lre-xt-lOX"/>
-                        <outlet property="searchDisplayController" destination="KPf-iN-2d5" id="fHD-D9-6fB"/>
+                        <outlet property="resultTable" destination="nUU-iO-oha" id="dJx-Py-gim"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H77-WE-e5t" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="KPf-iN-2d5">
-                    <connections>
-                        <outlet property="delegate" destination="ygD-Uh-7Oz" id="K7L-qx-2kS"/>
-                        <outlet property="searchContentsController" destination="ygD-Uh-7Oz" id="C4c-bF-bew"/>
-                        <outlet property="searchResultsDataSource" destination="ygD-Uh-7Oz" id="uIq-61-jem"/>
-                        <outlet property="searchResultsDelegate" destination="ygD-Uh-7Oz" id="nKq-FR-WrI"/>
-                    </connections>
-                </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="892.75362318840587" y="35.869565217391305"/>
+            <point key="canvasLocation" x="900.00000000000011" y="35.869565217391305"/>
         </scene>
     </scenes>
     <resources>

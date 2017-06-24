@@ -11,6 +11,7 @@
 		4C212EB01EF80C8F00DF6CC8 /* SetupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C212EAF1EF80C8F00DF6CC8 /* SetupModel.swift */; };
 		4C212EB21EF80D2500DF6CC8 /* PathClientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C212EB11EF80D2500DF6CC8 /* PathClientModel.swift */; };
 		4C43A0521EFA1339009AA4D4 /* GMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C43A0511EFA1339009AA4D4 /* GMapViewController.swift */; };
+		4C483A891EFE7202004067FC /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C483A881EFE7202004067FC /* LocationSearchTable.swift */; };
 		4C7D1E001EF7EFCF0019189F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D1DFF1EF7EFCF0019189F /* AppDelegate.swift */; };
 		4C7D1E051EF7EFCF0019189F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C7D1E031EF7EFCF0019189F /* Main.storyboard */; };
 		4C7D1E081EF7EFCF0019189F /* HaveToGoHome.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D1E061EF7EFCF0019189F /* HaveToGoHome.xcdatamodeld */; };
@@ -24,6 +25,7 @@
 		4CB1BF901EFD48AD0031A180 /* LocalSearchConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB1BF8F1EFD48AD0031A180 /* LocalSearchConstant.swift */; };
 		4CB1BF941EFE01300031A180 /* LocalSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB1BF931EFE01300031A180 /* LocalSearchService.swift */; };
 		4CB1BF961EFE01820031A180 /* LocalSearchParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB1BF951EFE01820031A180 /* LocalSearchParser.swift */; };
+		4CB1BF9C1EFE67000031A180 /* LocationSearchCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB1BF9B1EFE67000031A180 /* LocationSearchCells.swift */; };
 		4CD0D0141EF7F4A200B0DD84 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD0D0131EF7F4A200B0DD84 /* Images.xcassets */; };
 		4CD0D0161EF7F8F000B0DD84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0D0151EF7F8F000B0DD84 /* ViewController.swift */; };
 		D6C6868F01CA06F41DFD0175 /* Pods_HaveToGoHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80009067781ED649F6CCE657 /* Pods_HaveToGoHome.framework */; };
@@ -47,6 +49,7 @@
 		4C212EAF1EF80C8F00DF6CC8 /* SetupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupModel.swift; sourceTree = "<group>"; };
 		4C212EB11EF80D2500DF6CC8 /* PathClientModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathClientModel.swift; sourceTree = "<group>"; };
 		4C43A0511EFA1339009AA4D4 /* GMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMapViewController.swift; sourceTree = "<group>"; };
+		4C483A881EFE7202004067FC /* LocationSearchTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
 		4C7D1DFC1EF7EFCF0019189F /* HaveToGoHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaveToGoHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C7D1DFF1EF7EFCF0019189F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C7D1E041EF7EFCF0019189F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,6 +67,7 @@
 		4CB1BF8F1EFD48AD0031A180 /* LocalSearchConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalSearchConstant.swift; sourceTree = "<group>"; };
 		4CB1BF931EFE01300031A180 /* LocalSearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalSearchService.swift; sourceTree = "<group>"; };
 		4CB1BF951EFE01820031A180 /* LocalSearchParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalSearchParser.swift; sourceTree = "<group>"; };
+		4CB1BF9B1EFE67000031A180 /* LocationSearchCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchCells.swift; sourceTree = "<group>"; };
 		4CD0D0131EF7F4A200B0DD84 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4CD0D0151EF7F8F000B0DD84 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		80009067781ED649F6CCE657 /* Pods_HaveToGoHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HaveToGoHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +112,8 @@
 				4C212EAF1EF80C8F00DF6CC8 /* SetupModel.swift */,
 				4CA592611EF8C03800D61989 /* SetupTableViewCells.swift */,
 				4C212EB11EF80D2500DF6CC8 /* PathClientModel.swift */,
+				4C483A881EFE7202004067FC /* LocationSearchTable.swift */,
+				4CB1BF9B1EFE67000031A180 /* LocationSearchCells.swift */,
 				4CB1BF8E1EFD46B90031A180 /* Client */,
 			);
 			name = Model;
@@ -424,10 +430,12 @@
 				4CB1BF8B1EFD469D0031A180 /* LocalSearchClient.swift in Sources */,
 				4CA592621EF8C03800D61989 /* SetupTableViewCells.swift in Sources */,
 				4C212EB01EF80C8F00DF6CC8 /* SetupModel.swift in Sources */,
+				4CB1BF9C1EFE67000031A180 /* LocationSearchCells.swift in Sources */,
 				4CD0D0161EF7F8F000B0DD84 /* ViewController.swift in Sources */,
 				4CB1BF901EFD48AD0031A180 /* LocalSearchConstant.swift in Sources */,
 				4C7D1E081EF7EFCF0019189F /* HaveToGoHome.xcdatamodeld in Sources */,
 				4CB1BF941EFE01300031A180 /* LocalSearchService.swift in Sources */,
+				4C483A891EFE7202004067FC /* LocationSearchTable.swift in Sources */,
 				4C43A0521EFA1339009AA4D4 /* GMapViewController.swift in Sources */,
 				4CA592641EF9196600D61989 /* InsetLabel.swift in Sources */,
 				4CB1BF961EFE01820031A180 /* LocalSearchParser.swift in Sources */,
