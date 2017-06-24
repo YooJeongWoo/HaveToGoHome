@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3611BD14142EA8E6EE685EE50495FEFB /* Pods-HaveToGoHome-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA0310B6C778C92B7413CE8AC0C81D4 /* Pods-HaveToGoHome-dummy.m */; };
+		5D7C0DF633068E263A5B668786291CCC /* Pods-HaveToGoHomeUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A6EC6AD200B86068544A8461FCD45F /* Pods-HaveToGoHomeUITests-dummy.m */; };
+		72965A667A9AF52A935D4CC31F190ED5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		82BC403285EBCF80C5081B575D5D0119 /* Pods-HaveToGoHome-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 19C970DD4C0EA32D98D2A87629EC40FE /* Pods-HaveToGoHome-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9AE87109786D2099D56A7EBC25E01AD /* Pods-HaveToGoHomeUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B13EDBE3E688CFB06712352E93CF2E4 /* Pods-HaveToGoHomeUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAD7D4D48F69E53EB0B3249707BF3D14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		042D8C83949B69B69514871A7275DC63 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E803C6AB8451C009C4DEDC37F32FBFB /* Pods_HaveToGoHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HaveToGoHome.framework; path = "Pods-HaveToGoHome.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		16DC97ED8C425D491EEC2A557CE9ECAA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19C970DD4C0EA32D98D2A87629EC40FE /* Pods-HaveToGoHome-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HaveToGoHome-umbrella.h"; sourceTree = "<group>"; };
+		23741CA9A8DF93D3D232868AB4554339 /* Pods-HaveToGoHomeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HaveToGoHomeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		36DB83CB4279B90D59054691B89501D1 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		36F053F5AF2FE4196B3C87EC6F7F4D29 /* Pods-HaveToGoHomeUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HaveToGoHomeUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3D026722F74961FB19380F651E574222 /* Pods-HaveToGoHome-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HaveToGoHome-acknowledgements.markdown"; sourceTree = "<group>"; };
+		44ED7CF2003C08FDA161776151D42BC4 /* Pods-HaveToGoHome-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HaveToGoHome-frameworks.sh"; sourceTree = "<group>"; };
+		4A3CECE9D5FB7955B3CDC0D466370500 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		4B13EDBE3E688CFB06712352E93CF2E4 /* Pods-HaveToGoHomeUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HaveToGoHomeUITests-umbrella.h"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		752035779D4EEBAEB4D68E437530F589 /* Pods-HaveToGoHomeUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HaveToGoHomeUITests-frameworks.sh"; sourceTree = "<group>"; };
+		88D0BF689DE754B087CB527696A65C9F /* Pods-HaveToGoHomeUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HaveToGoHomeUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8AA0310B6C778C92B7413CE8AC0C81D4 /* Pods-HaveToGoHome-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HaveToGoHome-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9716AE4C2B92A7F0FAFC61EEC6FA5A2F /* Pods-HaveToGoHome.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HaveToGoHome.modulemap"; sourceTree = "<group>"; };
+		AAA46C1BE870B3D2F24A766448BA66FD /* Pods-HaveToGoHomeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HaveToGoHomeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC69BA32EDF71CCA7FAEAC60B6EDCF3A /* Pods-HaveToGoHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HaveToGoHome.debug.xcconfig"; sourceTree = "<group>"; };
+		B92FA5159E5862369B49C81FA6865408 /* Pods-HaveToGoHomeUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HaveToGoHomeUITests.modulemap"; sourceTree = "<group>"; };
+		C41D02CC7A7184F63F7EDB040153B77A /* Pods-HaveToGoHomeUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HaveToGoHomeUITests-resources.sh"; sourceTree = "<group>"; };
+		D2A6EC6AD200B86068544A8461FCD45F /* Pods-HaveToGoHomeUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HaveToGoHomeUITests-dummy.m"; sourceTree = "<group>"; };
+		E004374149D836C1256FFFCB38FECB72 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		E129364D97B57DB20FEF87285ED3D88F /* Pods-HaveToGoHome-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HaveToGoHome-acknowledgements.plist"; sourceTree = "<group>"; };
+		E8E62E61453EE6587990374ADD44BC00 /* Pods-HaveToGoHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HaveToGoHome.release.xcconfig"; sourceTree = "<group>"; };
+		F1F058CA9791C4CC513ABB6DBBAE7E24 /* Pods-HaveToGoHome-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HaveToGoHome-resources.sh"; sourceTree = "<group>"; };
+		F95DB7ACF73CF03040C57A3D42223A51 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		FFA32C1301878EB9F4F02993690DE878 /* Pods_HaveToGoHomeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HaveToGoHomeUITests.framework; path = "Pods-HaveToGoHomeUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FC4CC53856CA0204E9BCE2D0AD74583 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAD7D4D48F69E53EB0B3249707BF3D14 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD3D36582427F49221A7F068B5562BDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72965A667A9AF52A935D4CC31F190ED5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1418B056D31B27EE2CEBA552B5ADFE56 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				501562BF592517FC6A65661FF1B35C78 /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		243FAC914C81DCF02EFAD12598762AD5 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				1418B056D31B27EE2CEBA552B5ADFE56 /* Base */,
+				6BC99F081C91F80679CFA5DDC6213D57 /* Maps */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		33843F8046AC5A67AC90E80A6CD51B99 /* Pods-HaveToGoHomeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				042D8C83949B69B69514871A7275DC63 /* Info.plist */,
+				B92FA5159E5862369B49C81FA6865408 /* Pods-HaveToGoHomeUITests.modulemap */,
+				88D0BF689DE754B087CB527696A65C9F /* Pods-HaveToGoHomeUITests-acknowledgements.markdown */,
+				36F053F5AF2FE4196B3C87EC6F7F4D29 /* Pods-HaveToGoHomeUITests-acknowledgements.plist */,
+				D2A6EC6AD200B86068544A8461FCD45F /* Pods-HaveToGoHomeUITests-dummy.m */,
+				752035779D4EEBAEB4D68E437530F589 /* Pods-HaveToGoHomeUITests-frameworks.sh */,
+				C41D02CC7A7184F63F7EDB040153B77A /* Pods-HaveToGoHomeUITests-resources.sh */,
+				4B13EDBE3E688CFB06712352E93CF2E4 /* Pods-HaveToGoHomeUITests-umbrella.h */,
+				AAA46C1BE870B3D2F24A766448BA66FD /* Pods-HaveToGoHomeUITests.debug.xcconfig */,
+				23741CA9A8DF93D3D232868AB4554339 /* Pods-HaveToGoHomeUITests.release.xcconfig */,
+			);
+			name = "Pods-HaveToGoHomeUITests";
+			path = "Target Support Files/Pods-HaveToGoHomeUITests";
+			sourceTree = "<group>";
+		};
+		46CB069241896993BE0FCE43522640A2 /* Pods-HaveToGoHome */ = {
+			isa = PBXGroup;
+			children = (
+				16DC97ED8C425D491EEC2A557CE9ECAA /* Info.plist */,
+				9716AE4C2B92A7F0FAFC61EEC6FA5A2F /* Pods-HaveToGoHome.modulemap */,
+				3D026722F74961FB19380F651E574222 /* Pods-HaveToGoHome-acknowledgements.markdown */,
+				E129364D97B57DB20FEF87285ED3D88F /* Pods-HaveToGoHome-acknowledgements.plist */,
+				8AA0310B6C778C92B7413CE8AC0C81D4 /* Pods-HaveToGoHome-dummy.m */,
+				44ED7CF2003C08FDA161776151D42BC4 /* Pods-HaveToGoHome-frameworks.sh */,
+				F1F058CA9791C4CC513ABB6DBBAE7E24 /* Pods-HaveToGoHome-resources.sh */,
+				19C970DD4C0EA32D98D2A87629EC40FE /* Pods-HaveToGoHome-umbrella.h */,
+				AC69BA32EDF71CCA7FAEAC60B6EDCF3A /* Pods-HaveToGoHome.debug.xcconfig */,
+				E8E62E61453EE6587990374ADD44BC00 /* Pods-HaveToGoHome.release.xcconfig */,
+			);
+			name = "Pods-HaveToGoHome";
+			path = "Target Support Files/Pods-HaveToGoHome";
+			sourceTree = "<group>";
+		};
+		4F5C6AA408232192E2310ABBD7643AF6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				46CB069241896993BE0FCE43522640A2 /* Pods-HaveToGoHome */,
+				33843F8046AC5A67AC90E80A6CD51B99 /* Pods-HaveToGoHomeUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		501562BF592517FC6A65661FF1B35C78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E004374149D836C1256FFFCB38FECB72 /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B9DDBFD34805D0CECB3FE7AA6B7B594 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				243FAC914C81DCF02EFAD12598762AD5 /* GoogleMaps */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6BC99F081C91F80679CFA5DDC6213D57 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				E10253D9A6AF596CDA1C3BBE1F2FBFD6 /* Frameworks */,
+				7679C02ACA204A8841D527A6548CA23E /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		7679C02ACA204A8841D527A6548CA23E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4A3CECE9D5FB7955B3CDC0D466370500 /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7D684667D2A99547DC0224A383418A8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E803C6AB8451C009C4DEDC37F32FBFB /* Pods_HaveToGoHome.framework */,
+				FFA32C1301878EB9F4F02993690DE878 /* Pods_HaveToGoHomeUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				6B9DDBFD34805D0CECB3FE7AA6B7B594 /* Pods */,
+				7D684667D2A99547DC0224A383418A8A /* Products */,
+				4F5C6AA408232192E2310ABBD7643AF6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E10253D9A6AF596CDA1C3BBE1F2FBFD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F95DB7ACF73CF03040C57A3D42223A51 /* GoogleMaps.framework */,
+				36DB83CB4279B90D59054691B89501D1 /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		04C946D474953CB9B3C50F73DE7527A7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82BC403285EBCF80C5081B575D5D0119 /* Pods-HaveToGoHome-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDCE3CC06935E1E7C26AEE60DA606FD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9AE87109786D2099D56A7EBC25E01AD /* Pods-HaveToGoHomeUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		773B87759BDEE7AEB3027B75D50E0B87 /* Pods-HaveToGoHomeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 570B2745C938130890AFA72E553AB498 /* Build configuration list for PBXNativeTarget "Pods-HaveToGoHomeUITests" */;
+			buildPhases = (
+				89C535F3BACA25058DFBE6EF2BAF6CDD /* Sources */,
+				9FC4CC53856CA0204E9BCE2D0AD74583 /* Frameworks */,
+				EFDCE3CC06935E1E7C26AEE60DA606FD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HaveToGoHomeUITests";
+			productName = "Pods-HaveToGoHomeUITests";
+			productReference = FFA32C1301878EB9F4F02993690DE878 /* Pods_HaveToGoHomeUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8148F01351073A7FF6F7E9C2206CE67B /* Pods-HaveToGoHome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAD7BEDCF0B7CF6B50E550157D2D01A7 /* Build configuration list for PBXNativeTarget "Pods-HaveToGoHome" */;
+			buildPhases = (
+				BA539B3CE6C048128343903E8CACC16F /* Sources */,
+				CD3D36582427F49221A7F068B5562BDC /* Frameworks */,
+				04C946D474953CB9B3C50F73DE7527A7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HaveToGoHome";
+			productName = "Pods-HaveToGoHome";
+			productReference = 0E803C6AB8451C009C4DEDC37F32FBFB /* Pods_HaveToGoHome.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 7D684667D2A99547DC0224A383418A8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8148F01351073A7FF6F7E9C2206CE67B /* Pods-HaveToGoHome */,
+				773B87759BDEE7AEB3027B75D50E0B87 /* Pods-HaveToGoHomeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89C535F3BACA25058DFBE6EF2BAF6CDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D7C0DF633068E263A5B668786291CCC /* Pods-HaveToGoHomeUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA539B3CE6C048128343903E8CACC16F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3611BD14142EA8E6EE685EE50495FEFB /* Pods-HaveToGoHome-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		071CB31C032CAFA6E266DD567C2DC549 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC69BA32EDF71CCA7FAEAC60B6EDCF3A /* Pods-HaveToGoHome.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HaveToGoHome/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HaveToGoHome/Pods-HaveToGoHome.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HaveToGoHome;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		166E2CAC58E8608AD59A6F0B71C9C3E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		3839CBD440FB2CC60E04DD7B6385447E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8E62E61453EE6587990374ADD44BC00 /* Pods-HaveToGoHome.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HaveToGoHome/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HaveToGoHome/Pods-HaveToGoHome.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HaveToGoHome;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AA0B5BDEB018901CD8F88AAD05F5B893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C271E2B91964740223DA70AD0E6878E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAA46C1BE870B3D2F24A766448BA66FD /* Pods-HaveToGoHomeUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HaveToGoHomeUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HaveToGoHomeUITests/Pods-HaveToGoHomeUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HaveToGoHomeUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E68721180907A3D55850BC553DAAE484 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23741CA9A8DF93D3D232868AB4554339 /* Pods-HaveToGoHomeUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HaveToGoHomeUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HaveToGoHomeUITests/Pods-HaveToGoHomeUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HaveToGoHomeUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				166E2CAC58E8608AD59A6F0B71C9C3E0 /* Debug */,
+				AA0B5BDEB018901CD8F88AAD05F5B893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		570B2745C938130890AFA72E553AB498 /* Build configuration list for PBXNativeTarget "Pods-HaveToGoHomeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C271E2B91964740223DA70AD0E6878E8 /* Debug */,
+				E68721180907A3D55850BC553DAAE484 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAD7BEDCF0B7CF6B50E550157D2D01A7 /* Build configuration list for PBXNativeTarget "Pods-HaveToGoHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071CB31C032CAFA6E266DD567C2DC549 /* Debug */,
+				3839CBD440FB2CC60E04DD7B6385447E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

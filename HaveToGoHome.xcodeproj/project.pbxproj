@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C212EAA1EF809A300DF6CC8 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C212EA91EF809A300DF6CC8 /* SetupViewController.swift */; };
+		4C212EB01EF80C8F00DF6CC8 /* SetupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C212EAF1EF80C8F00DF6CC8 /* SetupModel.swift */; };
+		4C212EB21EF80D2500DF6CC8 /* PathClientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C212EB11EF80D2500DF6CC8 /* PathClientModel.swift */; };
+		4C43A0521EFA1339009AA4D4 /* GMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C43A0511EFA1339009AA4D4 /* GMapViewController.swift */; };
+		4C7D1E001EF7EFCF0019189F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D1DFF1EF7EFCF0019189F /* AppDelegate.swift */; };
+		4C7D1E051EF7EFCF0019189F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C7D1E031EF7EFCF0019189F /* Main.storyboard */; };
+		4C7D1E081EF7EFCF0019189F /* HaveToGoHome.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D1E061EF7EFCF0019189F /* HaveToGoHome.xcdatamodeld */; };
+		4C7D1E0A1EF7EFCF0019189F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C7D1E091EF7EFCF0019189F /* Assets.xcassets */; };
+		4C7D1E0D1EF7EFCF0019189F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C7D1E0B1EF7EFCF0019189F /* LaunchScreen.storyboard */; };
+		4C7D1E181EF7EFCF0019189F /* HaveToGoHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D1E171EF7EFCF0019189F /* HaveToGoHomeUITests.swift */; };
+		4CA592621EF8C03800D61989 /* SetupTableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA592611EF8C03800D61989 /* SetupTableViewCells.swift */; };
+		4CA592641EF9196600D61989 /* InsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA592631EF9196600D61989 /* InsetLabel.swift */; };
+		4CB1BF8B1EFD469D0031A180 /* LocalSearchClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB1BF8A1EFD469D0031A180 /* LocalSearchClient.swift */; };
+		4CB1BF8D1EFD46B00031A180 /* HaveToGoHomeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB1BF8C1EFD46B00031A180 /* HaveToGoHomeClient.swift */; };
+		4CB1BF901EFD48AD0031A180 /* LocalSearchConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB1BF8F1EFD48AD0031A180 /* LocalSearchConstant.swift */; };
+		4CD0D0141EF7F4A200B0DD84 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD0D0131EF7F4A200B0DD84 /* Images.xcassets */; };
+		4CD0D0161EF7F8F000B0DD84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0D0151EF7F8F000B0DD84 /* ViewController.swift */; };
+		D6C6868F01CA06F41DFD0175 /* Pods_HaveToGoHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80009067781ED649F6CCE657 /* Pods_HaveToGoHome.framework */; };
+		D7A815882357C1CB8D90F11D /* Pods_HaveToGoHomeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF977445EEAC1750A7830D1 /* Pods_HaveToGoHomeUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C7D1E141EF7EFCF0019189F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C7D1DF41EF7EFCF0019189F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C7D1DFB1EF7EFCF0019189F;
+			remoteInfo = HaveToGoHome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0937197774C6324B341EC323 /* Pods-HaveToGoHomeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaveToGoHomeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HaveToGoHomeUITests/Pods-HaveToGoHomeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0C70532597C5E57860CFBD04 /* Pods-HaveToGoHomeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaveToGoHomeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HaveToGoHomeUITests/Pods-HaveToGoHomeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4C212EA91EF809A300DF6CC8 /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
+		4C212EAF1EF80C8F00DF6CC8 /* SetupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupModel.swift; sourceTree = "<group>"; };
+		4C212EB11EF80D2500DF6CC8 /* PathClientModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathClientModel.swift; sourceTree = "<group>"; };
+		4C43A0511EFA1339009AA4D4 /* GMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMapViewController.swift; sourceTree = "<group>"; };
+		4C7D1DFC1EF7EFCF0019189F /* HaveToGoHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaveToGoHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C7D1DFF1EF7EFCF0019189F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C7D1E041EF7EFCF0019189F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C7D1E071EF7EFCF0019189F /* HaveToGoHome.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HaveToGoHome.xcdatamodel; sourceTree = "<group>"; };
+		4C7D1E091EF7EFCF0019189F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C7D1E0C1EF7EFCF0019189F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C7D1E0E1EF7EFCF0019189F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C7D1E131EF7EFCF0019189F /* HaveToGoHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaveToGoHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C7D1E171EF7EFCF0019189F /* HaveToGoHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaveToGoHomeUITests.swift; sourceTree = "<group>"; };
+		4C7D1E191EF7EFCF0019189F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CA592611EF8C03800D61989 /* SetupTableViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupTableViewCells.swift; sourceTree = "<group>"; };
+		4CA592631EF9196600D61989 /* InsetLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetLabel.swift; sourceTree = "<group>"; };
+		4CB1BF8A1EFD469D0031A180 /* LocalSearchClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalSearchClient.swift; sourceTree = "<group>"; };
+		4CB1BF8C1EFD46B00031A180 /* HaveToGoHomeClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HaveToGoHomeClient.swift; sourceTree = "<group>"; };
+		4CB1BF8F1EFD48AD0031A180 /* LocalSearchConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalSearchConstant.swift; sourceTree = "<group>"; };
+		4CD0D0131EF7F4A200B0DD84 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4CD0D0151EF7F8F000B0DD84 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		80009067781ED649F6CCE657 /* Pods_HaveToGoHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HaveToGoHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA11237E85040DE0D4886E12 /* Pods-HaveToGoHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaveToGoHome.release.xcconfig"; path = "Pods/Target Support Files/Pods-HaveToGoHome/Pods-HaveToGoHome.release.xcconfig"; sourceTree = "<group>"; };
+		D500FF4DF93D7E194B7C7149 /* Pods-HaveToGoHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaveToGoHome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HaveToGoHome/Pods-HaveToGoHome.debug.xcconfig"; sourceTree = "<group>"; };
+		FFF977445EEAC1750A7830D1 /* Pods_HaveToGoHomeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HaveToGoHomeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C7D1DF91EF7EFCF0019189F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6C6868F01CA06F41DFD0175 /* Pods_HaveToGoHome.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C7D1E101EF7EFCF0019189F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7A815882357C1CB8D90F11D /* Pods_HaveToGoHomeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C212EAB1EF80A7D00DF6CC8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4C212EA91EF809A300DF6CC8 /* SetupViewController.swift */,
+				4C43A0511EFA1339009AA4D4 /* GMapViewController.swift */,
+				4CD0D0151EF7F8F000B0DD84 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4C212EAE1EF80AE000DF6CC8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4C212EAF1EF80C8F00DF6CC8 /* SetupModel.swift */,
+				4CA592611EF8C03800D61989 /* SetupTableViewCells.swift */,
+				4C212EB11EF80D2500DF6CC8 /* PathClientModel.swift */,
+				4CB1BF8E1EFD46B90031A180 /* Client */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4C43A0531EFA7DE6009AA4D4 /* CustomizeComponent */ = {
+			isa = PBXGroup;
+			children = (
+				4CA592631EF9196600D61989 /* InsetLabel.swift */,
+			);
+			name = CustomizeComponent;
+			sourceTree = "<group>";
+		};
+		4C7D1DF31EF7EFCF0019189F = {
+			isa = PBXGroup;
+			children = (
+				4C7D1DFE1EF7EFCF0019189F /* HaveToGoHome */,
+				4C7D1E161EF7EFCF0019189F /* HaveToGoHomeUITests */,
+				4C7D1DFD1EF7EFCF0019189F /* Products */,
+				536D29E4C4D68ACC18A77FF9 /* Pods */,
+				89E8546DBB950757446D61E8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4C7D1DFD1EF7EFCF0019189F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C7D1DFC1EF7EFCF0019189F /* HaveToGoHome.app */,
+				4C7D1E131EF7EFCF0019189F /* HaveToGoHomeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C7D1DFE1EF7EFCF0019189F /* HaveToGoHome */ = {
+			isa = PBXGroup;
+			children = (
+				4C7D1DFF1EF7EFCF0019189F /* AppDelegate.swift */,
+				4C43A0531EFA7DE6009AA4D4 /* CustomizeComponent */,
+				4C212EAE1EF80AE000DF6CC8 /* Model */,
+				4C212EAB1EF80A7D00DF6CC8 /* Controller */,
+				4CB1BF911EFD48C30031A180 /* Assets */,
+				4CB1BF921EFD48D10031A180 /* Supporting Files */,
+			);
+			path = HaveToGoHome;
+			sourceTree = "<group>";
+		};
+		4C7D1E161EF7EFCF0019189F /* HaveToGoHomeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4C7D1E171EF7EFCF0019189F /* HaveToGoHomeUITests.swift */,
+				4C7D1E191EF7EFCF0019189F /* Info.plist */,
+			);
+			path = HaveToGoHomeUITests;
+			sourceTree = "<group>";
+		};
+		4CB1BF8E1EFD46B90031A180 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				4CB1BF8A1EFD469D0031A180 /* LocalSearchClient.swift */,
+				4CB1BF8F1EFD48AD0031A180 /* LocalSearchConstant.swift */,
+				4CB1BF8C1EFD46B00031A180 /* HaveToGoHomeClient.swift */,
+			);
+			name = Client;
+			sourceTree = "<group>";
+		};
+		4CB1BF911EFD48C30031A180 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4C7D1E031EF7EFCF0019189F /* Main.storyboard */,
+				4CD0D0131EF7F4A200B0DD84 /* Images.xcassets */,
+				4C7D1E091EF7EFCF0019189F /* Assets.xcassets */,
+				4C7D1E0B1EF7EFCF0019189F /* LaunchScreen.storyboard */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		4CB1BF921EFD48D10031A180 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C7D1E0E1EF7EFCF0019189F /* Info.plist */,
+				4C7D1E061EF7EFCF0019189F /* HaveToGoHome.xcdatamodeld */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		536D29E4C4D68ACC18A77FF9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D500FF4DF93D7E194B7C7149 /* Pods-HaveToGoHome.debug.xcconfig */,
+				BA11237E85040DE0D4886E12 /* Pods-HaveToGoHome.release.xcconfig */,
+				0937197774C6324B341EC323 /* Pods-HaveToGoHomeUITests.debug.xcconfig */,
+				0C70532597C5E57860CFBD04 /* Pods-HaveToGoHomeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		89E8546DBB950757446D61E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80009067781ED649F6CCE657 /* Pods_HaveToGoHome.framework */,
+				FFF977445EEAC1750A7830D1 /* Pods_HaveToGoHomeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C7D1DFB1EF7EFCF0019189F /* HaveToGoHome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C7D1E1C1EF7EFCF0019189F /* Build configuration list for PBXNativeTarget "HaveToGoHome" */;
+			buildPhases = (
+				B24CD6A69E4942B2BDB96389 /* [CP] Check Pods Manifest.lock */,
+				4C7D1DF81EF7EFCF0019189F /* Sources */,
+				4C7D1DF91EF7EFCF0019189F /* Frameworks */,
+				4C7D1DFA1EF7EFCF0019189F /* Resources */,
+				80347F25149BC66FDA298F87 /* [CP] Embed Pods Frameworks */,
+				9984CC0F67AD8255ABAA1560 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HaveToGoHome;
+			productName = HaveToGoHome;
+			productReference = 4C7D1DFC1EF7EFCF0019189F /* HaveToGoHome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C7D1E121EF7EFCF0019189F /* HaveToGoHomeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C7D1E1F1EF7EFCF0019189F /* Build configuration list for PBXNativeTarget "HaveToGoHomeUITests" */;
+			buildPhases = (
+				B564E8C5962B06E78A72323E /* [CP] Check Pods Manifest.lock */,
+				4C7D1E0F1EF7EFCF0019189F /* Sources */,
+				4C7D1E101EF7EFCF0019189F /* Frameworks */,
+				4C7D1E111EF7EFCF0019189F /* Resources */,
+				4D0516C0DE38884F548353CD /* [CP] Embed Pods Frameworks */,
+				6E4C8325BBAD0CFB9A13F8EB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C7D1E151EF7EFCF0019189F /* PBXTargetDependency */,
+			);
+			name = HaveToGoHomeUITests;
+			productName = HaveToGoHomeUITests;
+			productReference = 4C7D1E131EF7EFCF0019189F /* HaveToGoHomeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C7D1DF41EF7EFCF0019189F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = prohuhackers;
+				TargetAttributes = {
+					4C7D1DFB1EF7EFCF0019189F = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2U8WP57VU8;
+						ProvisioningStyle = Automatic;
+					};
+					4C7D1E121EF7EFCF0019189F = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4C7D1DFB1EF7EFCF0019189F;
+					};
+				};
+			};
+			buildConfigurationList = 4C7D1DF71EF7EFCF0019189F /* Build configuration list for PBXProject "HaveToGoHome" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C7D1DF31EF7EFCF0019189F;
+			productRefGroup = 4C7D1DFD1EF7EFCF0019189F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C7D1DFB1EF7EFCF0019189F /* HaveToGoHome */,
+				4C7D1E121EF7EFCF0019189F /* HaveToGoHomeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C7D1DFA1EF7EFCF0019189F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C7D1E0D1EF7EFCF0019189F /* LaunchScreen.storyboard in Resources */,
+				4CD0D0141EF7F4A200B0DD84 /* Images.xcassets in Resources */,
+				4C7D1E0A1EF7EFCF0019189F /* Assets.xcassets in Resources */,
+				4C7D1E051EF7EFCF0019189F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C7D1E111EF7EFCF0019189F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D0516C0DE38884F548353CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HaveToGoHomeUITests/Pods-HaveToGoHomeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E4C8325BBAD0CFB9A13F8EB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HaveToGoHomeUITests/Pods-HaveToGoHomeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80347F25149BC66FDA298F87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HaveToGoHome/Pods-HaveToGoHome-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9984CC0F67AD8255ABAA1560 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HaveToGoHome/Pods-HaveToGoHome-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B24CD6A69E4942B2BDB96389 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B564E8C5962B06E78A72323E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C7D1DF81EF7EFCF0019189F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C212EAA1EF809A300DF6CC8 /* SetupViewController.swift in Sources */,
+				4CB1BF8D1EFD46B00031A180 /* HaveToGoHomeClient.swift in Sources */,
+				4C7D1E001EF7EFCF0019189F /* AppDelegate.swift in Sources */,
+				4CB1BF8B1EFD469D0031A180 /* LocalSearchClient.swift in Sources */,
+				4CA592621EF8C03800D61989 /* SetupTableViewCells.swift in Sources */,
+				4C212EB01EF80C8F00DF6CC8 /* SetupModel.swift in Sources */,
+				4CD0D0161EF7F8F000B0DD84 /* ViewController.swift in Sources */,
+				4CB1BF901EFD48AD0031A180 /* LocalSearchConstant.swift in Sources */,
+				4C7D1E081EF7EFCF0019189F /* HaveToGoHome.xcdatamodeld in Sources */,
+				4C43A0521EFA1339009AA4D4 /* GMapViewController.swift in Sources */,
+				4CA592641EF9196600D61989 /* InsetLabel.swift in Sources */,
+				4C212EB21EF80D2500DF6CC8 /* PathClientModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C7D1E0F1EF7EFCF0019189F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C7D1E181EF7EFCF0019189F /* HaveToGoHomeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C7D1E151EF7EFCF0019189F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C7D1DFB1EF7EFCF0019189F /* HaveToGoHome */;
+			targetProxy = 4C7D1E141EF7EFCF0019189F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C7D1E031EF7EFCF0019189F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C7D1E041EF7EFCF0019189F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C7D1E0B1EF7EFCF0019189F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C7D1E0C1EF7EFCF0019189F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C7D1E1A1EF7EFCF0019189F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C7D1E1B1EF7EFCF0019189F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C7D1E1D1EF7EFCF0019189F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D500FF4DF93D7E194B7C7149 /* Pods-HaveToGoHome.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2U8WP57VU8;
+				INFOPLIST_FILE = HaveToGoHome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prohuhackers.HaveToGoHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4C7D1E1E1EF7EFCF0019189F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA11237E85040DE0D4886E12 /* Pods-HaveToGoHome.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2U8WP57VU8;
+				INFOPLIST_FILE = HaveToGoHome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prohuhackers.HaveToGoHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4C7D1E201EF7EFCF0019189F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0937197774C6324B341EC323 /* Pods-HaveToGoHomeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = HaveToGoHomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prohuhackers.HaveToGoHomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HaveToGoHome;
+			};
+			name = Debug;
+		};
+		4C7D1E211EF7EFCF0019189F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C70532597C5E57860CFBD04 /* Pods-HaveToGoHomeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = HaveToGoHomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prohuhackers.HaveToGoHomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HaveToGoHome;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C7D1DF71EF7EFCF0019189F /* Build configuration list for PBXProject "HaveToGoHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C7D1E1A1EF7EFCF0019189F /* Debug */,
+				4C7D1E1B1EF7EFCF0019189F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C7D1E1C1EF7EFCF0019189F /* Build configuration list for PBXNativeTarget "HaveToGoHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C7D1E1D1EF7EFCF0019189F /* Debug */,
+				4C7D1E1E1EF7EFCF0019189F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C7D1E1F1EF7EFCF0019189F /* Build configuration list for PBXNativeTarget "HaveToGoHomeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C7D1E201EF7EFCF0019189F /* Debug */,
+				4C7D1E211EF7EFCF0019189F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4C7D1E061EF7EFCF0019189F /* HaveToGoHome.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4C7D1E071EF7EFCF0019189F /* HaveToGoHome.xcdatamodel */,
+			);
+			currentVersion = 4C7D1E071EF7EFCF0019189F /* HaveToGoHome.xcdatamodel */;
+			path = HaveToGoHome.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4C7D1DF41EF7EFCF0019189F /* Project object */;
+}
