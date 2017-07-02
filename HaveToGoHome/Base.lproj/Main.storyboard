@@ -114,13 +114,13 @@
                                                     <rect key="frame" x="23" y="8" width="368" height="91"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="집 도착 시간 설정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YC0-1z-1bi">
-                                                            <rect key="frame" x="0.0" y="0.0" width="368" height="20.333333333333332"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="368" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="line" placeholder="통금 시간 없음" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZsS-cO-aYh">
-                                                            <rect key="frame" x="0.0" y="30.333333333333339" width="368" height="60.666666666666657"/>
+                                                            <rect key="frame" x="0.0" y="31" width="368" height="60"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <attributedString key="attributedText">
@@ -140,7 +140,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Gv-wf-Tcy">
-                                                    <rect key="frame" x="351" y="53.666666666666671" width="30" height="30.000000000000014"/>
+                                                    <rect key="frame" x="351" y="54" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="4Gv-wf-Tcy" secondAttribute="height" multiplier="1:1" id="XeV-Ws-F0a"/>
                                                     </constraints>
@@ -225,6 +225,9 @@
                                                             </fragment>
                                                         </attributedString>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="progressButtonClicked:" destination="BXY-GL-rlN" eventType="touchUpInside" id="qGn-xS-2BB"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -383,6 +386,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H77-WE-e5t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="900.00000000000011" y="35.869565217391305"/>
+        </scene>
+        <!--Main Guide View Controller-->
+        <scene sceneID="ut7-V7-Sbs">
+            <objects>
+                <viewController storyboardIdentifier="MainGuideView" id="39A-q1-Zt6" customClass="MainGuideViewController" customModule="HaveToGoHome" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jvq-mx-e1F"/>
+                        <viewControllerLayoutGuide type="bottom" id="VnZ-w0-iJM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nna-dt-XTc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background_main" translatesAutoresizingMaskIntoConstraints="NO" id="XaV-tV-WWO">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XaV-tV-WWO" firstAttribute="top" secondItem="nna-dt-XTc" secondAttribute="top" id="49G-dG-oap"/>
+                            <constraint firstItem="XaV-tV-WWO" firstAttribute="leading" secondItem="nna-dt-XTc" secondAttribute="leading" id="KgK-jA-eFg"/>
+                            <constraint firstAttribute="trailing" secondItem="XaV-tV-WWO" secondAttribute="trailing" id="b4q-6Z-LM2"/>
+                            <constraint firstItem="VnZ-w0-iJM" firstAttribute="top" secondItem="XaV-tV-WWO" secondAttribute="bottom" id="utx-Lf-rwD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ipQ-KV-s6E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1737.68115942029" y="35.869565217391305"/>
         </scene>
     </scenes>
     <resources>

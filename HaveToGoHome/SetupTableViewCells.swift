@@ -186,7 +186,12 @@ class SwitchSetupTableViewCell: UITableViewCell {
 // SetupView progress button
 class ProgressButtonTableViewCell: UITableViewCell {
     
+    var setupDoneDelegate: SetupDoneProtocol!
+    
     @IBOutlet weak var progressButton: UIButton!
+    @IBAction func progressButtonClicked(_ sender: Any) {
+        setupDoneDelegate.setupDone()
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -197,4 +202,8 @@ class ProgressButtonTableViewCell: UITableViewCell {
         
         // Configure the view for the selected state
     }
+}
+
+protocol SetupDoneProtocol {
+    func setupDone ()
 }

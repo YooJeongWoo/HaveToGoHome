@@ -20,6 +20,7 @@
 		4C7D1E181EF7EFCF0019189F /* HaveToGoHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D1E171EF7EFCF0019189F /* HaveToGoHomeUITests.swift */; };
 		4CA592621EF8C03800D61989 /* SetupTableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA592611EF8C03800D61989 /* SetupTableViewCells.swift */; };
 		4CA592641EF9196600D61989 /* InsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA592631EF9196600D61989 /* InsetLabel.swift */; };
+		4CAB52E61F08DD3E00616912 /* MainGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAB52E51F08DD3E00616912 /* MainGuideViewController.swift */; };
 		4CB1BF8B1EFD469D0031A180 /* LocalSearchClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB1BF8A1EFD469D0031A180 /* LocalSearchClient.swift */; };
 		4CB1BF8D1EFD46B00031A180 /* HaveToGoHomeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB1BF8C1EFD46B00031A180 /* HaveToGoHomeClient.swift */; };
 		4CB1BF901EFD48AD0031A180 /* LocalSearchConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB1BF8F1EFD48AD0031A180 /* LocalSearchConstant.swift */; };
@@ -62,6 +63,7 @@
 		4C7D1E191EF7EFCF0019189F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CA592611EF8C03800D61989 /* SetupTableViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupTableViewCells.swift; sourceTree = "<group>"; };
 		4CA592631EF9196600D61989 /* InsetLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetLabel.swift; sourceTree = "<group>"; };
+		4CAB52E51F08DD3E00616912 /* MainGuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainGuideViewController.swift; sourceTree = "<group>"; };
 		4CB1BF8A1EFD469D0031A180 /* LocalSearchClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalSearchClient.swift; sourceTree = "<group>"; };
 		4CB1BF8C1EFD46B00031A180 /* HaveToGoHomeClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HaveToGoHomeClient.swift; sourceTree = "<group>"; };
 		4CB1BF8F1EFD48AD0031A180 /* LocalSearchConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalSearchConstant.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				4C212EA91EF809A300DF6CC8 /* SetupViewController.swift */,
 				4C43A0511EFA1339009AA4D4 /* GMapViewController.swift */,
 				4CD0D0151EF7F8F000B0DD84 /* ViewController.swift */,
+				4CAB52E51F08DD3E00616912 /* MainGuideViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				4CB1BF941EFE01300031A180 /* LocalSearchService.swift in Sources */,
 				4C483A891EFE7202004067FC /* LocationSearchTable.swift in Sources */,
 				4C43A0521EFA1339009AA4D4 /* GMapViewController.swift in Sources */,
+				4CAB52E61F08DD3E00616912 /* MainGuideViewController.swift in Sources */,
 				4CA592641EF9196600D61989 /* InsetLabel.swift in Sources */,
 				4CB1BF961EFE01820031A180 /* LocalSearchParser.swift in Sources */,
 				4C212EB21EF80D2500DF6CC8 /* PathClientModel.swift in Sources */,

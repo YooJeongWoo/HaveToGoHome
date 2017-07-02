@@ -182,6 +182,8 @@ extension SetupViewController: UITableViewDataSource, UITableViewDelegate {
             let cell = tableView.dequeueReusableCell(withIdentifier: "NextButtonCell", for: indexPath) as! ProgressButtonTableViewCell
             
             // initially set it disabled
+            cell.setupDoneDelegate = self
+            
             cell.progressButton.setTitle("완료", for: .normal)
             cell.progressButton.setTitleColor(UIColor.gray, for: .normal)
             cell.progressButton.isEnabled = isSetDone
@@ -212,6 +214,13 @@ extension SetupViewController: SetLocation {
         self.userHome = setupModel.getUserHomeEntity()?.homeLocationLabel
     }
 
+}
+
+extension SetupViewController: SetupDoneProtocol {
+    func setupDone() {
+        let viewController = self.storyboard?.instantiateViewController(withIdentifier: "MainGuideView") as! MainGuideViewController
+        self.present(viewController, animated: true, completion: nil)
+    }
 }
 
 
