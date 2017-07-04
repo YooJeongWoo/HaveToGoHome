@@ -141,6 +141,9 @@ class TimeSetupTableViewCell: UITableViewCell {
     // 통금 시간 없음 버튼
     func noLimitTimeSet () {
         settingTextField.text = "통금 시간 없음"
+        setupModel?.setUserLimitTime(limitTimeData: LimitTimeCode.noLimitTime.rawValue)
+        updateDelegate?.updateSetupView()
+        
         settingTextField.resignFirstResponder()
     }
     

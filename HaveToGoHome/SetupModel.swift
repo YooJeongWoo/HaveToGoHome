@@ -9,6 +9,10 @@
 import UIKit
 import CoreData
 
+enum LimitTimeCode : String {
+    case noLimitTime = "No_Limit_Time"
+}
+
 class SetupModel: NSObject {
 
     // Managed Object Context
@@ -93,7 +97,7 @@ class SetupModel: NSObject {
             saveWithContext(context: managedObjectContext)
         } else {
             createUserHomeEntity(locationLabel, locationDetail: locationDetail, locationData: locationData, limitTimeData: nil, alarmOption: nil)
-            print(locationLabel)
+
             print("create New user home entity")
         }
     }

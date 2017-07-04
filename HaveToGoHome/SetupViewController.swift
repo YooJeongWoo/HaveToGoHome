@@ -221,8 +221,32 @@ extension SetupViewController: SetLocation {
 
 }
 
+
+// Protocol fucntion from NextButtonCell
 extension SetupViewController: SetupDoneProtocol {
     func setupDone() {
+        
+        
+        
+//        presentMainGuideViewContrller()
+        
+    }
+    
+    func startLoadingView () {
+        let indicator = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
+        indicator.frame = self.view.frame
+        indicator.center = self.view.center
+        indicator.tag = 110
+        
+        self.view.addSubview(indicator)
+        indicator.startAnimating()
+    }
+    
+    func stopLoadingView () {
+        self.view.viewWithTag(110)?.removeFromSuperview()
+    }
+    
+    func presentMainGuideViewContrller () {
         let viewController = self.storyboard?.instantiateViewController(withIdentifier: "MainGuideView") as! MainGuideViewController
         self.present(viewController, animated: true, completion: nil)
     }
