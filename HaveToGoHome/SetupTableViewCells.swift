@@ -42,8 +42,8 @@ struct DatePickerSettingComponent {
 // Switch setting cell component
 struct SwitchSettingComponent {
     var title:String?
-    var value:Bool
-    var show:Bool
+    var value:Bool?
+    var show:Bool?
     
     init(title:String, value:Bool, show:Bool) {
         self.title = title

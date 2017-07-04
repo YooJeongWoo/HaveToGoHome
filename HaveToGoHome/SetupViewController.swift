@@ -96,7 +96,7 @@ class SetupViewController: UIViewController {
                 datePickerSettingCells[0].content = entity?.limitTime
             }
             if setupModel.isOnOffAlarmSet() {
-                switchSettingCells[0].value = (entity?.onOffAlarmOption)!
+                switchSettingCells[0].value = entity?.onOffAlarmOption
             }
         }
         
@@ -153,7 +153,9 @@ extension SetupViewController: UITableViewDataSource, UITableViewDelegate {
             let component: MainSettingComponent = mainSettingCells[indexPath.row]
             
             cell.settingTitle.text = component.title!
-            cell.settingContent.text = component.content!
+            if component.content != nil {
+                cell.settingContent.text = component.content!
+            }
             cell.settingImage.image = UIImage(named: component.image!)
             
             // Add tap gesture to content button
@@ -195,7 +197,10 @@ extension SetupViewController: UITableViewDataSource, UITableViewDelegate {
             let component: SwitchSettingComponent = switchSettingCells[indexPath.row - 2]
             
             cell.settingTitle.text = component.title!
-            cell.settingSwitch.setOn(component.value, animated: false)
+            
+            if component.value != nil {
+                    cell.settingSwitch.setOn(component.value!, animated: false)
+            }
             
             return cell
         }

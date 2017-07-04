@@ -78,6 +78,7 @@ class SetupModel: NSObject {
             let fetchError = error as NSError
             print(fetchError)
         }
+        
         return resultItem
     }
     
@@ -92,6 +93,8 @@ class SetupModel: NSObject {
             saveWithContext(context: managedObjectContext)
         } else {
             createUserHomeEntity(locationLabel, locationDetail: locationDetail, locationData: locationData, limitTimeData: nil, alarmOption: nil)
+            print(locationLabel)
+            print("create New user home entity")
         }
     }
     
@@ -125,7 +128,7 @@ class SetupModel: NSObject {
     
     //MARK: check if it's set
     func isUserHomeSet() -> Bool {
-        if homeItem != nil {
+        if getUserHomeEntity() != nil {
             return true
         } else {
             return false
