@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C006CD61F0F9D3400128400 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C006CD51F0F9D3400128400 /* LoadingView.swift */; };
 		4C212EAA1EF809A300DF6CC8 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C212EA91EF809A300DF6CC8 /* SetupViewController.swift */; };
 		4C212EB01EF80C8F00DF6CC8 /* SetupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C212EAF1EF80C8F00DF6CC8 /* SetupModel.swift */; };
 		4C212EB21EF80D2500DF6CC8 /* PathClientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C212EB11EF80D2500DF6CC8 /* PathClientModel.swift */; };
@@ -27,6 +28,8 @@
 		4CB1BF941EFE01300031A180 /* LocalSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB1BF931EFE01300031A180 /* LocalSearchService.swift */; };
 		4CB1BF961EFE01820031A180 /* LocalSearchParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB1BF951EFE01820031A180 /* LocalSearchParser.swift */; };
 		4CB1BF9C1EFE67000031A180 /* LocationSearchCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB1BF9B1EFE67000031A180 /* LocationSearchCells.swift */; };
+		4CB3AEA31F0D069300B3C298 /* HaveToGoHomeAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB3AEA21F0D069300B3C298 /* HaveToGoHomeAPIService.swift */; };
+		4CB3AEA51F0D06AD00B3C298 /* HaveToGoHomeAPIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB3AEA41F0D06AD00B3C298 /* HaveToGoHomeAPIConstant.swift */; };
 		4CD0D0141EF7F4A200B0DD84 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD0D0131EF7F4A200B0DD84 /* Images.xcassets */; };
 		4CD0D0161EF7F8F000B0DD84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0D0151EF7F8F000B0DD84 /* ViewController.swift */; };
 		D6C6868F01CA06F41DFD0175 /* Pods_HaveToGoHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80009067781ED649F6CCE657 /* Pods_HaveToGoHome.framework */; };
@@ -46,6 +49,7 @@
 /* Begin PBXFileReference section */
 		0937197774C6324B341EC323 /* Pods-HaveToGoHomeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaveToGoHomeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HaveToGoHomeUITests/Pods-HaveToGoHomeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		0C70532597C5E57860CFBD04 /* Pods-HaveToGoHomeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaveToGoHomeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HaveToGoHomeUITests/Pods-HaveToGoHomeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4C006CD51F0F9D3400128400 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		4C212EA91EF809A300DF6CC8 /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
 		4C212EAF1EF80C8F00DF6CC8 /* SetupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupModel.swift; sourceTree = "<group>"; };
 		4C212EB11EF80D2500DF6CC8 /* PathClientModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathClientModel.swift; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 		4CB1BF931EFE01300031A180 /* LocalSearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalSearchService.swift; sourceTree = "<group>"; };
 		4CB1BF951EFE01820031A180 /* LocalSearchParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalSearchParser.swift; sourceTree = "<group>"; };
 		4CB1BF9B1EFE67000031A180 /* LocationSearchCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchCells.swift; sourceTree = "<group>"; };
+		4CB3AEA21F0D069300B3C298 /* HaveToGoHomeAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HaveToGoHomeAPIService.swift; sourceTree = "<group>"; };
+		4CB3AEA41F0D06AD00B3C298 /* HaveToGoHomeAPIConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HaveToGoHomeAPIConstant.swift; sourceTree = "<group>"; };
 		4CD0D0131EF7F4A200B0DD84 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4CD0D0151EF7F8F000B0DD84 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		80009067781ED649F6CCE657 /* Pods_HaveToGoHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HaveToGoHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +104,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C006CD71F0F9D3800128400 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C006CD51F0F9D3400128400 /* LoadingView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		4C212EAB1EF80A7D00DF6CC8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +170,7 @@
 				4C7D1DFF1EF7EFCF0019189F /* AppDelegate.swift */,
 				4C43A0531EFA7DE6009AA4D4 /* CustomizeComponent */,
 				4C212EAE1EF80AE000DF6CC8 /* Model */,
+				4C006CD71F0F9D3800128400 /* View */,
 				4C212EAB1EF80A7D00DF6CC8 /* Controller */,
 				4CB1BF911EFD48C30031A180 /* Assets */,
 				4CB1BF921EFD48D10031A180 /* Supporting Files */,
@@ -179,7 +194,9 @@
 				4CB1BF951EFE01820031A180 /* LocalSearchParser.swift */,
 				4CB1BF8A1EFD469D0031A180 /* LocalSearchClient.swift */,
 				4CB1BF8F1EFD48AD0031A180 /* LocalSearchConstant.swift */,
+				4CB3AEA21F0D069300B3C298 /* HaveToGoHomeAPIService.swift */,
 				4CB1BF8C1EFD46B00031A180 /* HaveToGoHomeClient.swift */,
+				4CB3AEA41F0D06AD00B3C298 /* HaveToGoHomeAPIConstant.swift */,
 			);
 			name = Client;
 			sourceTree = "<group>";
@@ -429,15 +446,18 @@
 			files = (
 				4C212EAA1EF809A300DF6CC8 /* SetupViewController.swift in Sources */,
 				4CB1BF8D1EFD46B00031A180 /* HaveToGoHomeClient.swift in Sources */,
+				4CB3AEA51F0D06AD00B3C298 /* HaveToGoHomeAPIConstant.swift in Sources */,
 				4C7D1E001EF7EFCF0019189F /* AppDelegate.swift in Sources */,
 				4CB1BF8B1EFD469D0031A180 /* LocalSearchClient.swift in Sources */,
 				4CA592621EF8C03800D61989 /* SetupTableViewCells.swift in Sources */,
 				4C212EB01EF80C8F00DF6CC8 /* SetupModel.swift in Sources */,
+				4CB3AEA31F0D069300B3C298 /* HaveToGoHomeAPIService.swift in Sources */,
 				4CB1BF9C1EFE67000031A180 /* LocationSearchCells.swift in Sources */,
 				4CD0D0161EF7F8F000B0DD84 /* ViewController.swift in Sources */,
 				4CB1BF901EFD48AD0031A180 /* LocalSearchConstant.swift in Sources */,
 				4C7D1E081EF7EFCF0019189F /* HaveToGoHome.xcdatamodeld in Sources */,
 				4CB1BF941EFE01300031A180 /* LocalSearchService.swift in Sources */,
+				4C006CD61F0F9D3400128400 /* LoadingView.swift in Sources */,
 				4C483A891EFE7202004067FC /* LocationSearchTable.swift in Sources */,
 				4C43A0521EFA1339009AA4D4 /* GMapViewController.swift in Sources */,
 				4CAB52E61F08DD3E00616912 /* MainGuideViewController.swift in Sources */,

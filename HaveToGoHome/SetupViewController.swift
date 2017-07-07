@@ -18,12 +18,14 @@ enum SetupCase: Int {
 
 class SetupViewController: UIViewController {
     
+    let htghService = HaveToGoHomeService()
+    
     @IBOutlet weak var setupNavBar: UINavigationBar!
     @IBOutlet weak var setupTableView: UITableView!
     
     var timePicker: UIDatePicker?
     
-    //Model entitiy for items
+    // Model entitiy for items
     var setupModel: SetupModel!
     
     // cell array for cell type
@@ -225,10 +227,11 @@ extension SetupViewController: SetLocation {
 // Protocol fucntion from NextButtonCell
 extension SetupViewController: SetupDoneProtocol {
     func setupDone() {
+        startLoadingView()
         
+        htghService.test()
         
-        
-//        presentMainGuideViewContrller()
+//        presentMainGuideViewController()
         
     }
     
@@ -246,7 +249,7 @@ extension SetupViewController: SetupDoneProtocol {
         self.view.viewWithTag(110)?.removeFromSuperview()
     }
     
-    func presentMainGuideViewContrller () {
+    func presentMainGuideViewController () {
         let viewController = self.storyboard?.instantiateViewController(withIdentifier: "MainGuideView") as! MainGuideViewController
         self.present(viewController, animated: true, completion: nil)
     }
