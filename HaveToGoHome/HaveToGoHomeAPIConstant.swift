@@ -9,7 +9,7 @@
 extension HaveToGoHomeClient {
     
     struct Constants {
-        static let ApiScheme = "http"
+        static let ApiScheme = "https"
         static let ApiHost = "app.havetogohome.ga"
         static let ApiPort = 3000
         static let ApiPath = "/"

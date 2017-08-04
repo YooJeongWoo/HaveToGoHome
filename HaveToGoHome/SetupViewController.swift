@@ -231,7 +231,7 @@ extension SetupViewController: SetupDoneProtocol {
         
         htghService.test()
         
-//        presentMainGuideViewController()
+        presentMainGuideViewController()
         
     }
     

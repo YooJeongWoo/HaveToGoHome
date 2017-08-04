@@ -76,12 +76,12 @@ class HaveToGoHomeClient :NSObject {
         components.queryItems = [URLQueryItem]()
         components.port = HaveToGoHomeClient.Constants.ApiPort
         
-        print(components.url)
-        
         for (key, value) in parameters {
             let queryItem = URLQueryItem(name: key, value: "\(value)")
             components.queryItems!.append(queryItem)
         }
+        
+        print(components.url)
         
         return components.url!
     }

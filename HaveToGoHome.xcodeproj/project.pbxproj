@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C006CD61F0F9D3400128400 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C006CD51F0F9D3400128400 /* LoadingView.swift */; };
+		4C12490E1F2371B700BF69E1 /* MainViewControllerViewComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C12490D1F2371B700BF69E1 /* MainViewControllerViewComponents.swift */; };
 		4C212EAA1EF809A300DF6CC8 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C212EA91EF809A300DF6CC8 /* SetupViewController.swift */; };
 		4C212EB01EF80C8F00DF6CC8 /* SetupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C212EAF1EF80C8F00DF6CC8 /* SetupModel.swift */; };
 		4C212EB21EF80D2500DF6CC8 /* PathClientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C212EB11EF80D2500DF6CC8 /* PathClientModel.swift */; };
@@ -50,6 +51,7 @@
 		0937197774C6324B341EC323 /* Pods-HaveToGoHomeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaveToGoHomeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HaveToGoHomeUITests/Pods-HaveToGoHomeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		0C70532597C5E57860CFBD04 /* Pods-HaveToGoHomeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaveToGoHomeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HaveToGoHomeUITests/Pods-HaveToGoHomeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4C006CD51F0F9D3400128400 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		4C12490D1F2371B700BF69E1 /* MainViewControllerViewComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewControllerViewComponents.swift; sourceTree = "<group>"; };
 		4C212EA91EF809A300DF6CC8 /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
 		4C212EAF1EF80C8F00DF6CC8 /* SetupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupModel.swift; sourceTree = "<group>"; };
 		4C212EB11EF80D2500DF6CC8 /* PathClientModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathClientModel.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				4C006CD51F0F9D3400128400 /* LoadingView.swift */,
+				4C12490D1F2371B700BF69E1 /* MainViewControllerViewComponents.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C12490E1F2371B700BF69E1 /* MainViewControllerViewComponents.swift in Sources */,
 				4C212EAA1EF809A300DF6CC8 /* SetupViewController.swift in Sources */,
 				4CB1BF8D1EFD46B00031A180 /* HaveToGoHomeClient.swift in Sources */,
 				4CB3AEA51F0D06AD00B3C298 /* HaveToGoHomeAPIConstant.swift in Sources */,
