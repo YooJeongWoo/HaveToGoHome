@@ -11,8 +11,13 @@ import UIKit
 
 class MainGuideViewController: UIViewController {
     
-    @IBOutlet weak var mainPathCircleView: UIView!
+    var mainPathCircleView: MainPathCircleView!
+    var titleNavigationBar: UINavigationBar!
     
+    
+    var viewConstraintsContainer: [NSLayoutConstraint] = []
+    
+    let testJson: String! = "test"
     
     // view componenets pixel calculation
     var mainPathCircleViewWidth: CGFloat?
@@ -28,6 +33,17 @@ class MainGuideViewController: UIViewController {
         setViewComponenets()
     }
     
+    override func viewDidLayoutSubviews() {
+        mainPathCircleView.defaultSetting(withSuperViewFrame: self.view)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+    }
     
     
     

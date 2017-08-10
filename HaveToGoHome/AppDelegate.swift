@@ -20,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         GMSServices.provideAPIKey("AIzaSyDXiFAnAkyU3NnDzIrXtp076M4LD7JjX_Y")
         
+        UIApplication.shared.statusBarStyle = .lightContent
+        
         return true
     }
 
