@@ -41,8 +41,8 @@ class MainPathCircleView: UIView {
     func defaultSetting(withSuperViewFrame mainPathCircleView: UIView) {
         self.backgroundColor = UIColor.clear
         
-        guidePathRadius = self.frame.width/2
-        backGuidePathStroke = guidePathRadius! / 25
+        guidePathRadius = self.frame.width / 2.4
+        backGuidePathStroke = guidePathRadius! / 35
         drawBackGuidePath(superViewFrame: mainPathCircleView)
     }
     

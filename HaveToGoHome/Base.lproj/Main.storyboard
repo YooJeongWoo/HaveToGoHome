@@ -114,13 +114,13 @@
                                                     <rect key="frame" x="23" y="8" width="329" height="91"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="집 도착 시간 설정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YC0-1z-1bi">
-                                                            <rect key="frame" x="0.0" y="0.0" width="329" height="21"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="329" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="line" placeholder="통금 시간 없음" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZsS-cO-aYh">
-                                                            <rect key="frame" x="0.0" y="31" width="329" height="60"/>
+                                                            <rect key="frame" x="0.0" y="30.5" width="329" height="60.5"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <attributedString key="attributedText">
@@ -212,7 +212,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gif-MR-Qyp">
-                                                    <rect key="frame" x="97" y="42" width="182" height="73"/>
+                                                    <rect key="frame" x="96.5" y="42" width="182" height="73"/>
                                                     <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="5"/>
                                                     <state key="normal" backgroundImage="button_main">
                                                         <attributedString key="attributedTitle">

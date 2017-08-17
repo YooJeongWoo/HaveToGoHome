@@ -15,6 +15,7 @@
 		4C43A0521EFA1339009AA4D4 /* GMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C43A0511EFA1339009AA4D4 /* GMapViewController.swift */; };
 		4C483A891EFE7202004067FC /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C483A881EFE7202004067FC /* LocationSearchTable.swift */; };
 		4C61725C1F3B53C0002FB049 /* MainPathCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C61725B1F3B53C0002FB049 /* MainPathCircleView.swift */; };
+		4C61DC5B1F456F9F000AFBCE /* MainDigitalClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C61DC5A1F456F9F000AFBCE /* MainDigitalClockView.swift */; };
 		4C7D1E001EF7EFCF0019189F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D1DFF1EF7EFCF0019189F /* AppDelegate.swift */; };
 		4C7D1E051EF7EFCF0019189F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C7D1E031EF7EFCF0019189F /* Main.storyboard */; };
 		4C7D1E081EF7EFCF0019189F /* HaveToGoHome.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D1E061EF7EFCF0019189F /* HaveToGoHome.xcdatamodeld */; };
@@ -59,6 +60,7 @@
 		4C43A0511EFA1339009AA4D4 /* GMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMapViewController.swift; sourceTree = "<group>"; };
 		4C483A881EFE7202004067FC /* LocationSearchTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
 		4C61725B1F3B53C0002FB049 /* MainPathCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPathCircleView.swift; sourceTree = "<group>"; };
+		4C61DC5A1F456F9F000AFBCE /* MainDigitalClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDigitalClockView.swift; sourceTree = "<group>"; };
 		4C7D1DFC1EF7EFCF0019189F /* HaveToGoHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaveToGoHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C7D1DFF1EF7EFCF0019189F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C7D1E041EF7EFCF0019189F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				4C006CD51F0F9D3400128400 /* LoadingView.swift */,
 				4C12490D1F2371B700BF69E1 /* MainViewControllerViewComponents.swift */,
 				4C61725B1F3B53C0002FB049 /* MainPathCircleView.swift */,
+				4C61DC5A1F456F9F000AFBCE /* MainDigitalClockView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 				4CD0D0161EF7F8F000B0DD84 /* ViewController.swift in Sources */,
 				4CB1BF901EFD48AD0031A180 /* LocalSearchConstant.swift in Sources */,
 				4C7D1E081EF7EFCF0019189F /* HaveToGoHome.xcdatamodeld in Sources */,
+				4C61DC5B1F456F9F000AFBCE /* MainDigitalClockView.swift in Sources */,
 				4CB1BF941EFE01300031A180 /* LocalSearchService.swift in Sources */,
 				4C006CD61F0F9D3400128400 /* LoadingView.swift in Sources */,
 				4C483A891EFE7202004067FC /* LocationSearchTable.swift in Sources */,

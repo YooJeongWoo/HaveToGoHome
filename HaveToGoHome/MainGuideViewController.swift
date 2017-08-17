@@ -11,8 +11,10 @@ import UIKit
 
 class MainGuideViewController: UIViewController {
     
-    var mainPathCircleView: MainPathCircleView!
     var titleNavigationBar: UINavigationBar!
+    
+    var mainPathCircleView: MainPathCircleView!
+    var mainDigitalClockView: MainDigitalClockView!
     
     
     var viewConstraintsContainer: [NSLayoutConstraint] = []
@@ -35,6 +37,7 @@ class MainGuideViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         mainPathCircleView.defaultSetting(withSuperViewFrame: self.view)
+        mainDigitalClockView.defaultSetup()
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -30,13 +30,12 @@ extension MainGuideViewController {
         calculatePixelWithRation()
         
         mainPathCircleView = MainPathCircleView()
+        mainDigitalClockView = MainDigitalClockView()
         titleNavigationBar = UINavigationBar()
         
         mainPathCircleView.translatesAutoresizingMaskIntoConstraints = false
+        mainDigitalClockView.translatesAutoresizingMaskIntoConstraints = false
         titleNavigationBar.translatesAutoresizingMaskIntoConstraints = false
-        
-        self.view.addSubview(mainPathCircleView)
-        self.view.addSubview(titleNavigationBar)
         
         titleNavigationBar.setBackgroundImage(UIImage(), for: .default)
         titleNavigationBar.shadowImage = UIImage()
@@ -45,6 +44,12 @@ extension MainGuideViewController {
         titleNavigationBar.setItems([titleItem], animated: false)
         titleNavigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         
+        mainDigitalClockView.backgroundColor = UIColor.white
+        
+        self.view.addSubview(mainPathCircleView)
+        self.view.addSubview(mainDigitalClockView)
+        self.view.addSubview(titleNavigationBar)
+        
         addConstraintsForViews()
     }
     
@@ -52,7 +57,8 @@ extension MainGuideViewController {
         
         let viewsDict : [String:Any] = [
             "mainPathCircleView" : mainPathCircleView,
-            "titleNavBar" : titleNavigationBar
+            "titleNavBar" : titleNavigationBar,
+            "mainDigitalClockView" : mainDigitalClockView
         ]
         
         let metricsDict : [String:Any] = [
@@ -65,6 +71,10 @@ extension MainGuideViewController {
         viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "V:[titleNavBar]-50-[mainPathCircleView]", options: NSLayoutFormatOptions(), metrics: metricsDict, views: viewsDict)
         viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "H:|-25-[mainPathCircleView]-25-|", options: NSLayoutFormatOptions(), metrics: metricsDict, views: viewsDict)
         NSLayoutConstraint(item: mainPathCircleView, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: mainPathCircleView, attribute: NSLayoutAttribute.height, multiplier: 1, constant: 0).isActive = true
+        
+        NSLayoutConstraint(item: mainDigitalClockView, attribute: .centerY, relatedBy: .equal, toItem: mainPathCircleView, attribute: .centerY, multiplier: 1, constant: 0).isActive = true
+        viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "H:|-100-[mainDigitalClockView]-100-|", options: NSLayoutFormatOptions(), metrics: metricsDict, views: viewsDict)
+        viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "V:[mainDigitalClockView(150)]", options: NSLayoutFormatOptions(), metrics: metricsDict, views: viewsDict)
         
         NSLayoutConstraint.activate(viewConstraintsContainer)
         
