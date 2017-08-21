@@ -15,6 +15,7 @@ class MainGuideViewController: UIViewController {
     
     var mainPathCircleView: MainPathCircleView!
     var mainDigitalClockView: MainDigitalClockView!
+    var mainCardView: MainCardView!
     
     
     var viewConstraintsContainer: [NSLayoutConstraint] = []
@@ -33,21 +34,52 @@ class MainGuideViewController: UIViewController {
         
         // Calculate and set pixel with view size
         setViewComponenets()
+        
+        mainDigitalClockView.defaultSetup()
+        mainCardView.defaultSetup()
+        
+        setupMainCardCollectionView()
+        
     }
     
     override func viewDidLayoutSubviews() {
         mainPathCircleView.defaultSetting(withSuperViewFrame: self.view)
-        mainDigitalClockView.defaultSetup()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
         
         
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+}
+
+extension MainGuideViewController {
+    
+    func setupMainCardCollectionView() {
+        
+        mainCardView.cardCollectionView?.delegate = self
+        mainCardView.cardCollectionView?.dataSource = self
+        
+        mainCardView.cardCollectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cardCell")
+        mainCardView.cardCollectionView?.contentInset = UIEdgeInsetsMake(50, 0, 0, 0)
+        mainCardView.cardCollectionView?.scrollIndicatorInsets = UIEdgeInsetsMake(50, 0, 0, 0)
+        
     }
     
+}
+
+extension MainGuideViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = mainCardView.cardCollectionView.dequeueReusableCell(withReuseIdentifier: "cardCell", for: indexPath)
+        cell.backgroundColor = UIColor.blue
+        
+        return cell
+    }
     
 }

@@ -23,9 +23,30 @@ class MainDigitalClockView: UIView {
         let clockLabel = UILabel()
         clockLabel.text = "00:00"
         clockLabel.textColor = UIColor.black
-        clockLabel.backgroundColor = UIColor.clear
+        clockLabel.backgroundColor = UIColor.red
         clockLabel.textAlignment = .center
+        
         return clockLabel
+    }()
+    
+    let timeDescriptionLabel: UILabel = {
+        let descriptionLabel = UILabel()
+        descriptionLabel.text = "00분 남았어요."
+        descriptionLabel.textColor = UIColor.black
+        descriptionLabel.backgroundColor = UIColor.blue
+        descriptionLabel.textAlignment = .center
+        
+        return descriptionLabel
+    }()
+    
+    let missionDescriptionBubbleLabel: UILabel = {
+        let bubblelabel = UILabel()
+        bubblelabel.text = "efef"
+        bubblelabel.textColor = UIColor.black
+        bubblelabel.backgroundColor = UIColor.cyan
+        bubblelabel.textAlignment = .center
+        
+        return bubblelabel
     }()
     
     required init?(coder aDecoder: NSCoder) {
@@ -40,24 +61,36 @@ class MainDigitalClockView: UIView {
     func defaultSetup() {
         
         mainInfoClockLabel.translatesAutoresizingMaskIntoConstraints = false
+        timeDescriptionLabel.translatesAutoresizingMaskIntoConstraints = false
+        missionDescriptionBubbleLabel.translatesAutoresizingMaskIntoConstraints = false
         
         self.addSubview(mainInfoClockLabel)
+        self.addSubview(timeDescriptionLabel)
+        self.addSubview(missionDescriptionBubbleLabel)
         
         setupConstraints()
     }
     
     private func setupConstraints() {
         
-        let viewDict : [String:Any] = [
-            "mainInfoClockLabel" : mainInfoClockLabel
+        let viewsDict : [String:Any] = [
+            "mainInfoClockLabel" : mainInfoClockLabel,
+            "timeDescriptionLabel" : timeDescriptionLabel,
+            "missionDescriptionBubbleLabel" : missionDescriptionBubbleLabel
         ]
         
         let metricsDict : [String:Any?] = [
             "empty" : nil
         ]
     
-        viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "H:|-10-[mainInfoClockLabel]-10-|", options: NSLayoutFormatOptions(), metrics: metricsDict, views: viewDict)
-        viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "V:|-[mainInfoClockLabel]-|", options: NSLayoutFormatOptions(), metrics: metricsDict, views: viewDict)
+        viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "H:|-10-[mainInfoClockLabel]-10-|", options: NSLayoutFormatOptions(), metrics: metricsDict, views: viewsDict)
+        viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "V:|-40-[mainInfoClockLabel]-40-|", options: NSLayoutFormatOptions(), metrics: metricsDict, views: viewsDict)
+        
+        viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "H:|-10-[timeDescriptionLabel]-10-|", options: NSLayoutFormatOptions(), metrics: metricsDict, views: viewsDict)
+        viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "V:[mainInfoClockLabel][timeDescriptionLabel(30)]", options: NSLayoutFormatOptions(), metrics: metricsDict, views: viewsDict)
+        
+        viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "H:|-10-[missionDescriptionBubbleLabel]-10-|", options: NSLayoutFormatOptions(), metrics: metricsDict, views: viewsDict)
+        viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "V:[missionDescriptionBubbleLabel(30)][mainInfoClockLabel]", options: NSLayoutFormatOptions(), metrics: metricsDict, views: viewsDict)
         
         NSLayoutConstraint.activate(viewConstraintsContainer)
         

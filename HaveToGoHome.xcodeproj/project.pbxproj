@@ -16,6 +16,8 @@
 		4C483A891EFE7202004067FC /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C483A881EFE7202004067FC /* LocationSearchTable.swift */; };
 		4C61725C1F3B53C0002FB049 /* MainPathCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C61725B1F3B53C0002FB049 /* MainPathCircleView.swift */; };
 		4C61DC5B1F456F9F000AFBCE /* MainDigitalClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C61DC5A1F456F9F000AFBCE /* MainDigitalClockView.swift */; };
+		4C61DC5D1F471BF7000AFBCE /* MainCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C61DC5C1F471BF7000AFBCE /* MainCardView.swift */; };
+		4C6E55D91F4B2A6100535CD0 /* MainCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E55D81F4B2A6100535CD0 /* MainCardCollectionViewCell.swift */; };
 		4C7D1E001EF7EFCF0019189F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D1DFF1EF7EFCF0019189F /* AppDelegate.swift */; };
 		4C7D1E051EF7EFCF0019189F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C7D1E031EF7EFCF0019189F /* Main.storyboard */; };
 		4C7D1E081EF7EFCF0019189F /* HaveToGoHome.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D1E061EF7EFCF0019189F /* HaveToGoHome.xcdatamodeld */; };
@@ -61,6 +63,8 @@
 		4C483A881EFE7202004067FC /* LocationSearchTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
 		4C61725B1F3B53C0002FB049 /* MainPathCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPathCircleView.swift; sourceTree = "<group>"; };
 		4C61DC5A1F456F9F000AFBCE /* MainDigitalClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDigitalClockView.swift; sourceTree = "<group>"; };
+		4C61DC5C1F471BF7000AFBCE /* MainCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCardView.swift; sourceTree = "<group>"; };
+		4C6E55D81F4B2A6100535CD0 /* MainCardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCardCollectionViewCell.swift; sourceTree = "<group>"; };
 		4C7D1DFC1EF7EFCF0019189F /* HaveToGoHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaveToGoHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C7D1DFF1EF7EFCF0019189F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C7D1E041EF7EFCF0019189F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -117,6 +121,7 @@
 				4C12490D1F2371B700BF69E1 /* MainViewControllerViewComponents.swift */,
 				4C61725B1F3B53C0002FB049 /* MainPathCircleView.swift */,
 				4C61DC5A1F456F9F000AFBCE /* MainDigitalClockView.swift */,
+				4C61DC5C1F471BF7000AFBCE /* MainCardView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 				4C212EB11EF80D2500DF6CC8 /* PathClientModel.swift */,
 				4C483A881EFE7202004067FC /* LocationSearchTable.swift */,
 				4CB1BF9B1EFE67000031A180 /* LocationSearchCells.swift */,
+				4C6E55D81F4B2A6100535CD0 /* MainCardCollectionViewCell.swift */,
 				4CB1BF8E1EFD46B90031A180 /* Client */,
 			);
 			name = Model;
@@ -455,11 +461,13 @@
 			files = (
 				4C12490E1F2371B700BF69E1 /* MainViewControllerViewComponents.swift in Sources */,
 				4C212EAA1EF809A300DF6CC8 /* SetupViewController.swift in Sources */,
+				4C6E55D91F4B2A6100535CD0 /* MainCardCollectionViewCell.swift in Sources */,
 				4CB1BF8D1EFD46B00031A180 /* HaveToGoHomeClient.swift in Sources */,
 				4CB3AEA51F0D06AD00B3C298 /* HaveToGoHomeAPIConstant.swift in Sources */,
 				4C7D1E001EF7EFCF0019189F /* AppDelegate.swift in Sources */,
 				4CB1BF8B1EFD469D0031A180 /* LocalSearchClient.swift in Sources */,
 				4CA592621EF8C03800D61989 /* SetupTableViewCells.swift in Sources */,
+				4C61DC5D1F471BF7000AFBCE /* MainCardView.swift in Sources */,
 				4C212EB01EF80C8F00DF6CC8 /* SetupModel.swift in Sources */,
 				4CB3AEA31F0D069300B3C298 /* HaveToGoHomeAPIService.swift in Sources */,
 				4CB1BF9C1EFE67000031A180 /* LocationSearchCells.swift in Sources */,

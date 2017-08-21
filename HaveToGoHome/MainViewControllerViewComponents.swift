@@ -31,10 +31,12 @@ extension MainGuideViewController {
         
         mainPathCircleView = MainPathCircleView()
         mainDigitalClockView = MainDigitalClockView()
+        mainCardView = MainCardView()
         titleNavigationBar = UINavigationBar()
         
         mainPathCircleView.translatesAutoresizingMaskIntoConstraints = false
         mainDigitalClockView.translatesAutoresizingMaskIntoConstraints = false
+        mainCardView.translatesAutoresizingMaskIntoConstraints = false
         titleNavigationBar.translatesAutoresizingMaskIntoConstraints = false
         
         titleNavigationBar.setBackgroundImage(UIImage(), for: .default)
@@ -46,8 +48,11 @@ extension MainGuideViewController {
         
         mainDigitalClockView.backgroundColor = UIColor.white
         
+        mainCardView.backgroundColor = UIColor.white
+        
         self.view.addSubview(mainPathCircleView)
         self.view.addSubview(mainDigitalClockView)
+        self.view.addSubview(mainCardView)
         self.view.addSubview(titleNavigationBar)
         
         addConstraintsForViews()
@@ -58,7 +63,8 @@ extension MainGuideViewController {
         let viewsDict : [String:Any] = [
             "mainPathCircleView" : mainPathCircleView,
             "titleNavBar" : titleNavigationBar,
-            "mainDigitalClockView" : mainDigitalClockView
+            "mainDigitalClockView" : mainDigitalClockView,
+            "mainCardView" : mainCardView
         ]
         
         let metricsDict : [String:Any] = [
@@ -68,13 +74,18 @@ extension MainGuideViewController {
         viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "V:|-50-[titleNavBar(20)]", options: .alignAllCenterY, metrics: metricsDict, views: viewsDict)
         viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "H:|[titleNavBar]|", options: NSLayoutFormatOptions(), metrics: metricsDict, views: viewsDict)
         
-        viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "V:[titleNavBar]-50-[mainPathCircleView]", options: NSLayoutFormatOptions(), metrics: metricsDict, views: viewsDict)
+        viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "V:[titleNavBar]-40-[mainPathCircleView]", options: NSLayoutFormatOptions(), metrics: metricsDict, views: viewsDict)
         viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "H:|-25-[mainPathCircleView]-25-|", options: NSLayoutFormatOptions(), metrics: metricsDict, views: viewsDict)
         NSLayoutConstraint(item: mainPathCircleView, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: mainPathCircleView, attribute: NSLayoutAttribute.height, multiplier: 1, constant: 0).isActive = true
         
         NSLayoutConstraint(item: mainDigitalClockView, attribute: .centerY, relatedBy: .equal, toItem: mainPathCircleView, attribute: .centerY, multiplier: 1, constant: 0).isActive = true
-        viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "H:|-100-[mainDigitalClockView]-100-|", options: NSLayoutFormatOptions(), metrics: metricsDict, views: viewsDict)
-        viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "V:[mainDigitalClockView(150)]", options: NSLayoutFormatOptions(), metrics: metricsDict, views: viewsDict)
+        NSLayoutConstraint(item: mainDigitalClockView, attribute: .centerX, relatedBy: .equal, toItem: mainPathCircleView, attribute: .centerX, multiplier: 1, constant: 0).isActive = true
+        NSLayoutConstraint(item: mainDigitalClockView, attribute: .height, relatedBy: .equal, toItem: mainPathCircleView, attribute: .height, multiplier: 0.55, constant: 0).isActive = true
+        NSLayoutConstraint(item: mainDigitalClockView, attribute: .width, relatedBy: .equal, toItem: mainDigitalClockView, attribute: .height, multiplier: 1.1, constant: 0).isActive = true
+        
+        viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "V:[mainPathCircleView]-5-[mainCardView]|", options: NSLayoutFormatOptions(), metrics: metricsDict, views: viewsDict)
+        viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "H:|[mainCardView]|", options: NSLayoutFormatOptions(), metrics: metricsDict, views: viewsDict)
+        
         
         NSLayoutConstraint.activate(viewConstraintsContainer)
         
