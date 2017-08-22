@@ -54,18 +54,23 @@ extension MainGuideViewController {
     
     func setupMainCardCollectionView() {
         
+        if let flowLayout = mainCardView.cardCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            flowLayout.scrollDirection = .horizontal
+            flowLayout.minimumLineSpacing = 10
+        }
+        
         mainCardView.cardCollectionView?.delegate = self
         mainCardView.cardCollectionView?.dataSource = self
         
         mainCardView.cardCollectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cardCell")
-        mainCardView.cardCollectionView?.contentInset = UIEdgeInsetsMake(50, 0, 0, 0)
-        mainCardView.cardCollectionView?.scrollIndicatorInsets = UIEdgeInsetsMake(50, 0, 0, 0)
+        
+        mainCardView.cardCollectionView.isPagingEnabled = true
         
     }
     
 }
 
-extension MainGuideViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension MainGuideViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -80,6 +85,10 @@ extension MainGuideViewController: UICollectionViewDelegate, UICollectionViewDat
         cell.backgroundColor = UIColor.blue
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: mainCardView.cardCollectionView.frame.width, height: mainCardView.cardCollectionView.frame.height)
     }
     
 }
