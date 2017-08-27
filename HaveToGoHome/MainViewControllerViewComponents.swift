@@ -46,7 +46,7 @@ extension MainGuideViewController {
         titleNavigationBar.setItems([titleItem], animated: false)
         titleNavigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         
-        mainDigitalClockView.backgroundColor = UIColor.white
+        mainDigitalClockView.backgroundColor = UIColor.clear
         
         mainCardView.backgroundColor = UIColor.white
         

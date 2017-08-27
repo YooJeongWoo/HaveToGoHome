@@ -33,7 +33,7 @@ class MainCardView: UIView {
         
         let layout = UICollectionViewFlowLayout()
         
-        cardCollectionView = UICollectionView(frame: self.bounds, collectionViewLayout: layout)
+        cardCollectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cardCollectionView.backgroundColor = UIColor.black
         
         cardCollectionView.translatesAutoresizingMaskIntoConstraints = false
