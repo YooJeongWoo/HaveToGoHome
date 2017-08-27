@@ -34,7 +34,7 @@ class MainCardView: UIView {
         let layout = UICollectionViewFlowLayout()
         
         cardCollectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        cardCollectionView.backgroundColor = UIColor.black
+        cardCollectionView.backgroundColor = UIColor.clear
         
         cardCollectionView.translatesAutoresizingMaskIntoConstraints = false
         
@@ -54,7 +54,7 @@ class MainCardView: UIView {
         ]
         
         viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "H:|[cardCollectionView]|", options: NSLayoutFormatOptions(), metrics: metricsDict, views: viewsDict)
-        viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "V:|-10-[cardCollectionView]|", options: NSLayoutFormatOptions(), metrics: metricsDict, views: viewsDict)
+        viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "V:|[cardCollectionView]-20-|", options: NSLayoutFormatOptions(), metrics: metricsDict, views: viewsDict)
         
         NSLayoutConstraint.activate(viewConstraintsContainer)
     }

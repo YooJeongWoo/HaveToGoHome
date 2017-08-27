@@ -10,4 +10,16 @@ import UIKit
 
 class MainCardCollectionViewCell: UICollectionViewCell {
     
+//    override func awakeFromNib() {
+//        super.awakeFromNib()
+//        
+//        setupCard()
+//    }
+    
+    func setupCard() {
+        layer.cornerRadius = 10.0
+        layer.masksToBounds = true
+        backgroundColor = UIColor.white
+    }
+    
 }

@@ -48,7 +48,7 @@ extension MainGuideViewController {
         
         mainDigitalClockView.backgroundColor = UIColor.clear
         
-        mainCardView.backgroundColor = UIColor.white
+        mainCardView.backgroundColor = UIColor.clear
         
         self.view.addSubview(mainPathCircleView)
         self.view.addSubview(mainDigitalClockView)

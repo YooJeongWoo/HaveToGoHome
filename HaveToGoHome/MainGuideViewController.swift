@@ -56,13 +56,13 @@ extension MainGuideViewController {
         
         if let flowLayout = mainCardView.cardCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             flowLayout.scrollDirection = .horizontal
-            flowLayout.minimumLineSpacing = 10
+            flowLayout.minimumLineSpacing = 40
         }
         
         mainCardView.cardCollectionView?.delegate = self
         mainCardView.cardCollectionView?.dataSource = self
         
-        mainCardView.cardCollectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cardCell")
+        mainCardView.cardCollectionView?.register(MainCardCollectionViewCell.self, forCellWithReuseIdentifier: "cardCell")
         
         mainCardView.cardCollectionView.isPagingEnabled = true
         
@@ -81,14 +81,26 @@ extension MainGuideViewController: UICollectionViewDelegate, UICollectionViewDat
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = mainCardView.cardCollectionView.dequeueReusableCell(withReuseIdentifier: "cardCell", for: indexPath)
-        cell.backgroundColor = UIColor.blue
+        let cell = mainCardView.cardCollectionView.dequeueReusableCell(withReuseIdentifier: "cardCell", for: indexPath) as! MainCardCollectionViewCell
+        
+        cell.setupCard()
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: mainCardView.cardCollectionView.frame.width, height: mainCardView.cardCollectionView.frame.height)
+        return CGSize(width: mainCardView.cardCollectionView.frame.width - 40, height: mainCardView.cardCollectionView.frame.height)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        
+//        let totalCellWidth = 4 * mainCardView.cardCollectionView.frame.width
+//        let totalSpacingWidth = CGFloat(3 * 20)
+//        
+//        let leftInset = (mainCardView.cardCollectionView.frame.width - CGFloat(totalCellWidth + totalSpacingWidth)) / 2
+//        let rightInset = leftInset
+        
+        return UIEdgeInsetsMake(0, 20, 0, 20)
     }
     
 }
