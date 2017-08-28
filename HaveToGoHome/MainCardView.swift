@@ -60,3 +60,41 @@ class MainCardView: UIView {
     }
 
 }
+
+extension MainCardCollectionViewCell {
+    func setupInnerCollectionView () {
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.minimumLineSpacing = 0
+        
+        cardInnerCollectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        cardInnerCollectionView?.backgroundColor = UIColor.white
+        
+        cardInnerCollectionView?.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.addSubview(cardInnerCollectionView!)
+        
+        setConstraints()
+    }
+    
+    private func setConstraints() {
+        
+        var viewConstraintsContainer: [NSLayoutConstraint] = []
+        
+        let viewsDict : [String:Any] = [
+            "cardInnerCollectionView" : cardInnerCollectionView!
+        ]
+        
+        viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "H:|[cardInnerCollectionView]|", options: NSLayoutFormatOptions(), metrics: nil, views: viewsDict)
+        viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "V:|[cardInnerCollectionView]|", options: NSLayoutFormatOptions(), metrics: nil, views: viewsDict)
+        
+        NSLayoutConstraint.activate(viewConstraintsContainer)        
+        
+    }
+    
+}
+
+extension CardInnerBottomButtonCell {
+    
+}
+
