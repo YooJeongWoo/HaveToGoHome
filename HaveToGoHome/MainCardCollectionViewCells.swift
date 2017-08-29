@@ -66,12 +66,25 @@ extension MainCardCollectionViewCell: UICollectionViewDelegateFlowLayout, UIColl
         if indexPath == IndexPath(row: 0, section: 0) {
             size.height = 30
         } else if indexPath == IndexPath(row: 1, section: 0) {
-            size.height = (cardInnerCollectionView?.frame.height)! - 80
+            size.height = (cardInnerCollectionView?.frame.height)! - 100
         } else {
-            size.height = 50
+            size.height = 70
         }
         
         return size
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+        if indexPath == IndexPath(row: 0, section: 0) {
+            cell.backgroundColor = UIColor.blue
+        } else if indexPath == IndexPath(row: 1, section: 0) {
+            cell.backgroundColor = UIColor.red
+        } else {
+            cell.backgroundColor = UIColor.white
+            addBottomButton(cell: cell)
+        }
+
     }
     
 }

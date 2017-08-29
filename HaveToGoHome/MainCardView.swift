@@ -88,8 +88,27 @@ extension MainCardCollectionViewCell {
         viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "H:|[cardInnerCollectionView]|", options: NSLayoutFormatOptions(), metrics: nil, views: viewsDict)
         viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "V:|[cardInnerCollectionView]|", options: NSLayoutFormatOptions(), metrics: nil, views: viewsDict)
         
-        NSLayoutConstraint.activate(viewConstraintsContainer)        
+        NSLayoutConstraint.activate(viewConstraintsContainer)
+    }
+    
+    func addBottomButton(cell: UICollectionViewCell) {
+        let buttonView: MainButton = MainButton()
+        buttonView.setLabel(label: "도보 경로 보기")
         
+        cell.addSubview(buttonView)
+        
+        buttonView.translatesAutoresizingMaskIntoConstraints = false
+        
+        var viewConstraintsContainer: [NSLayoutConstraint] = []
+        
+        let viewsDict : [String:Any] = [
+            "buttonView" : buttonView
+        ]
+        
+        viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "H:|[buttonView]|", options: NSLayoutFormatOptions(), metrics: nil, views: viewsDict)
+        viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "V:|[buttonView]|", options: NSLayoutFormatOptions(), metrics: nil, views: viewsDict)
+        
+        NSLayoutConstraint.activate(viewConstraintsContainer)
     }
     
 }
