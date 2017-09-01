@@ -66,9 +66,9 @@ extension MainCardCollectionViewCell: UICollectionViewDelegateFlowLayout, UIColl
         if indexPath == IndexPath(row: 0, section: 0) {
             size.height = 30
         } else if indexPath == IndexPath(row: 1, section: 0) {
-            size.height = (cardInnerCollectionView?.frame.height)! - 100
+            size.height = (cardInnerCollectionView?.frame.height)! - 90
         } else {
-            size.height = 70
+            size.height = 60
         }
         
         return size
@@ -77,7 +77,8 @@ extension MainCardCollectionViewCell: UICollectionViewDelegateFlowLayout, UIColl
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         
         if indexPath == IndexPath(row: 0, section: 0) {
-            cell.backgroundColor = UIColor.blue
+            cell.backgroundColor = UIColor.white
+            addTopStretchButton(cell: cell)
         } else if indexPath == IndexPath(row: 1, section: 0) {
             cell.backgroundColor = UIColor.red
         } else {

@@ -27,6 +27,7 @@
 		4C7D1E0A1EF7EFCF0019189F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C7D1E091EF7EFCF0019189F /* Assets.xcassets */; };
 		4C7D1E0D1EF7EFCF0019189F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C7D1E0B1EF7EFCF0019189F /* LaunchScreen.storyboard */; };
 		4C7D1E181EF7EFCF0019189F /* HaveToGoHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D1E171EF7EFCF0019189F /* HaveToGoHomeUITests.swift */; };
+		4C96E8E71F59A917002754AD /* StretchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C96E8E61F59A917002754AD /* StretchButton.swift */; };
 		4CA592621EF8C03800D61989 /* SetupTableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA592611EF8C03800D61989 /* SetupTableViewCells.swift */; };
 		4CA592641EF9196600D61989 /* InsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA592631EF9196600D61989 /* InsetLabel.swift */; };
 		4CAB52E61F08DD3E00616912 /* MainGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAB52E51F08DD3E00616912 /* MainGuideViewController.swift */; };
@@ -81,6 +82,7 @@
 		4C7D1E131EF7EFCF0019189F /* HaveToGoHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaveToGoHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C7D1E171EF7EFCF0019189F /* HaveToGoHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaveToGoHomeUITests.swift; sourceTree = "<group>"; };
 		4C7D1E191EF7EFCF0019189F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C96E8E61F59A917002754AD /* StretchButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StretchButton.swift; sourceTree = "<group>"; };
 		4CA592611EF8C03800D61989 /* SetupTableViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupTableViewCells.swift; sourceTree = "<group>"; };
 		4CA592631EF9196600D61989 /* InsetLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetLabel.swift; sourceTree = "<group>"; };
 		4CAB52E51F08DD3E00616912 /* MainGuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainGuideViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			children = (
 				4CA592631EF9196600D61989 /* InsetLabel.swift */,
 				4C2B705C1F545DC800D6815E /* MainButton.swift */,
+				4C96E8E61F59A917002754AD /* StretchButton.swift */,
 			);
 			name = CustomizeComponent;
 			sourceTree = "<group>";
@@ -483,6 +486,7 @@
 				4C6E55D91F4B2A6100535CD0 /* MainCardCollectionViewCells.swift in Sources */,
 				4CB1BF8D1EFD46B00031A180 /* HaveToGoHomeClient.swift in Sources */,
 				4CB3AEA51F0D06AD00B3C298 /* HaveToGoHomeAPIConstant.swift in Sources */,
+				4C96E8E71F59A917002754AD /* StretchButton.swift in Sources */,
 				4C7D1E001EF7EFCF0019189F /* AppDelegate.swift in Sources */,
 				4CB1BF8B1EFD469D0031A180 /* LocalSearchClient.swift in Sources */,
 				4CA592621EF8C03800D61989 /* SetupTableViewCells.swift in Sources */,

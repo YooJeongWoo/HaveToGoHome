@@ -1,26 +1,17 @@
 //
-//  MainButton.swift
+//  StretchButton.swift
 //  HaveToGoHome
 //
-//  Created by 유정우 on 2017. 8. 28..
+//  Created by 유정우 on 2017. 9. 1..
 //  Copyright © 2017년 prohuhackers. All rights reserved.
 //
 
 import UIKit
 
-class MainButton: UIView {
-
-    private var buttonLabel: String?
+class StretchButton: UIView {
+    
     var button: UIButton!
-    
-    func setLabel (label: String) {
-        buttonLabel = label
-        
-        if button != nil {
-            button.setTitle(buttonLabel, for: .normal)
-        }
-    }
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -33,15 +24,8 @@ class MainButton: UIView {
     }
     
     private func setButtonElement() {
-        button = UIButton(type: .system)
-        
-        buttonLabel = "test"
-        
-        button.setBackgroundImage(UIImage(named: "button_main2"), for: .normal)
-        
-        button.setTitle(buttonLabel, for: .normal)
-        button.setTitleColor(UIColor.white, for: .normal)
-        button.titleLabel?.font = UIFont(name: "Apple SD 산돌고딕 Neo", size: 16)
+        button = UIButton(type: .custom)
+        button.setImage(UIImage(named: "arrow-up"), for: .normal)
         
         button.translatesAutoresizingMaskIntoConstraints = false
         

@@ -111,6 +111,26 @@ extension MainCardCollectionViewCell {
         NSLayoutConstraint.activate(viewConstraintsContainer)
     }
     
+    func addTopStretchButton(cell: UICollectionViewCell) {
+        let buttonView: StretchButton = StretchButton()
+        
+        cell.addSubview(buttonView)
+        
+        buttonView.translatesAutoresizingMaskIntoConstraints = false
+        
+        var viewConstraintsContainer: [NSLayoutConstraint] = []
+        
+        let viewsDict : [String:Any] = [
+            "buttonView" : buttonView
+        ]
+        
+        viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "H:|[buttonView]|", options: NSLayoutFormatOptions(), metrics: nil, views: viewsDict)
+        viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "V:|[buttonView]|", options: NSLayoutFormatOptions(), metrics: nil, views: viewsDict)
+        
+        NSLayoutConstraint.activate(viewConstraintsContainer)
+        
+    }
+    
 }
 
 extension CardInnerBottomButtonCell {
