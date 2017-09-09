@@ -131,6 +131,29 @@ extension MainCardCollectionViewCell {
         
     }
     
+    // set mission Section with labes and views
+    func setMissionCell(cell: UICollectionViewCell) {
+        var missionTitleLabel: MissionTitleLabel!
+        missionTitleLabel = MissionTitleLabel(prefix: "미션", message: "버스 탑승")
+        
+        cell.addSubview(missionTitleLabel)
+        
+        missionTitleLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        var viewConstraintsContainer: [NSLayoutConstraint] = []
+        
+        let viewsDict : [String:Any] = [
+            "missionTitleLabel" : missionTitleLabel
+        ]
+        
+        viewConstraintsContainer += NSLayoutConstraint.constraints(withVisualFormat: "V:|-10-[missionTitleLabel]", options: NSLayoutFormatOptions(), metrics: nil, views: viewsDict)
+        NSLayoutConstraint(item: missionTitleLabel, attribute: .centerX, relatedBy: .equal, toItem: cell, attribute: .centerX, multiplier: 1.0, constant: 0).isActive = true
+        NSLayoutConstraint(item: missionTitleLabel, attribute: .width, relatedBy: .equal, toItem: cell, attribute: .width, multiplier: 0.3, constant: 0).isActive = true
+        NSLayoutConstraint(item: missionTitleLabel, attribute: .height, relatedBy: .equal, toItem: cell, attribute: .height, multiplier: 0, constant: 20).isActive = true
+        
+        NSLayoutConstraint.activate(viewConstraintsContainer)
+    }
+    
 }
 
 extension CardInnerBottomButtonCell {

@@ -31,6 +31,7 @@ class MainCardCollectionViewCell: UICollectionViewCell {
         cardInnerCollectionView?.delegate = self
         cardInnerCollectionView?.dataSource = self
         cardInnerCollectionView?.register(CardInnerBottomButtonCell.self, forCellWithReuseIdentifier: "bottomButton")
+        cardInnerCollectionView?.register(CardInnerMissionCell.self, forCellWithReuseIdentifier: "mission")
     }
     
 }
@@ -41,14 +42,14 @@ extension MainCardCollectionViewCell: UICollectionViewDelegateFlowLayout, UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = cardInnerCollectionView?.dequeueReusableCell(withReuseIdentifier: "bottomButton", for: indexPath) as! CardInnerBottomButtonCell
+        var cell: UICollectionViewCell!
         
         if indexPath == IndexPath(row: 0, section: 0) {
-            cell.backgroundColor = UIColor.blue
+            cell =  cardInnerCollectionView?.dequeueReusableCell(withReuseIdentifier: "bottomButton", for: indexPath) as! CardInnerBottomButtonCell
         } else if indexPath == IndexPath(row: 1, section: 0) {
-            cell.backgroundColor = UIColor.red
+            cell = cardInnerCollectionView?.dequeueReusableCell(withReuseIdentifier: "mission", for: indexPath) as! CardInnerMissionCell
         } else {
-            cell.backgroundColor = UIColor.white
+            cell = cardInnerCollectionView?.dequeueReusableCell(withReuseIdentifier: "bottomButton", for: indexPath) as! CardInnerBottomButtonCell
         }
         
         
@@ -64,9 +65,9 @@ extension MainCardCollectionViewCell: UICollectionViewDelegateFlowLayout, UIColl
         var size = CGSize(width: (cardInnerCollectionView?.frame.width)!, height: 50)
         
         if indexPath == IndexPath(row: 0, section: 0) {
-            size.height = 30
+            size.height = 25
         } else if indexPath == IndexPath(row: 1, section: 0) {
-            size.height = (cardInnerCollectionView?.frame.height)! - 90
+            size.height = (cardInnerCollectionView?.frame.height)! - 85
         } else {
             size.height = 60
         }
@@ -80,7 +81,8 @@ extension MainCardCollectionViewCell: UICollectionViewDelegateFlowLayout, UIColl
             cell.backgroundColor = UIColor.white
             addTopStretchButton(cell: cell)
         } else if indexPath == IndexPath(row: 1, section: 0) {
-            cell.backgroundColor = UIColor.red
+            cell.backgroundColor = UIColor.white
+            setMissionCell(cell: cell)
         } else {
             cell.backgroundColor = UIColor.white
             addBottomButton(cell: cell)
@@ -91,5 +93,11 @@ extension MainCardCollectionViewCell: UICollectionViewDelegateFlowLayout, UIColl
 }
 
 class CardInnerBottomButtonCell: UICollectionViewCell {
+    
+}
+
+class CardInnerMissionCell: UICollectionViewCell {
+    private var missionTitleLabel: MissionTitleLabel!
+    
     
 }

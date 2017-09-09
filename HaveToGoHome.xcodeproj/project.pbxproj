@@ -37,6 +37,7 @@
 		4CB1BF941EFE01300031A180 /* LocalSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB1BF931EFE01300031A180 /* LocalSearchService.swift */; };
 		4CB1BF961EFE01820031A180 /* LocalSearchParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB1BF951EFE01820031A180 /* LocalSearchParser.swift */; };
 		4CB1BF9C1EFE67000031A180 /* LocationSearchCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB1BF9B1EFE67000031A180 /* LocationSearchCells.swift */; };
+		4CB32B791F64378D00671AC7 /* MissionTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB32B781F64378D00671AC7 /* MissionTitleLabel.swift */; };
 		4CB3AEA31F0D069300B3C298 /* HaveToGoHomeAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB3AEA21F0D069300B3C298 /* HaveToGoHomeAPIService.swift */; };
 		4CB3AEA51F0D06AD00B3C298 /* HaveToGoHomeAPIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB3AEA41F0D06AD00B3C298 /* HaveToGoHomeAPIConstant.swift */; };
 		4CD0D0141EF7F4A200B0DD84 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD0D0131EF7F4A200B0DD84 /* Images.xcassets */; };
@@ -92,6 +93,7 @@
 		4CB1BF931EFE01300031A180 /* LocalSearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalSearchService.swift; sourceTree = "<group>"; };
 		4CB1BF951EFE01820031A180 /* LocalSearchParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalSearchParser.swift; sourceTree = "<group>"; };
 		4CB1BF9B1EFE67000031A180 /* LocationSearchCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchCells.swift; sourceTree = "<group>"; };
+		4CB32B781F64378D00671AC7 /* MissionTitleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionTitleLabel.swift; sourceTree = "<group>"; };
 		4CB3AEA21F0D069300B3C298 /* HaveToGoHomeAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HaveToGoHomeAPIService.swift; sourceTree = "<group>"; };
 		4CB3AEA41F0D06AD00B3C298 /* HaveToGoHomeAPIConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HaveToGoHomeAPIConstant.swift; sourceTree = "<group>"; };
 		4CD0D0131EF7F4A200B0DD84 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				4CA592631EF9196600D61989 /* InsetLabel.swift */,
 				4C2B705C1F545DC800D6815E /* MainButton.swift */,
 				4C96E8E61F59A917002754AD /* StretchButton.swift */,
+				4CB32B781F64378D00671AC7 /* MissionTitleLabel.swift */,
 			);
 			name = CustomizeComponent;
 			sourceTree = "<group>";
@@ -494,6 +497,7 @@
 				4C212EB01EF80C8F00DF6CC8 /* SetupModel.swift in Sources */,
 				4CB3AEA31F0D069300B3C298 /* HaveToGoHomeAPIService.swift in Sources */,
 				4CB1BF9C1EFE67000031A180 /* LocationSearchCells.swift in Sources */,
+				4CB32B791F64378D00671AC7 /* MissionTitleLabel.swift in Sources */,
 				4CD0D0161EF7F8F000B0DD84 /* ViewController.swift in Sources */,
 				4CB1BF901EFD48AD0031A180 /* LocalSearchConstant.swift in Sources */,
 				4C7D1E081EF7EFCF0019189F /* HaveToGoHome.xcdatamodeld in Sources */,
